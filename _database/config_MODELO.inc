@@ -1,0 +1,56 @@
+<%
+Dim CFG_DB_DADOS, CFG_PATH, CFG_IDEMPRESA, CFG_IDCLIENTE
+Dim CFG_DB_CATRACA_ANO2, CFG_DB_CATRACA_ANO3, CFG_FLAG_EXPORT_DATA, CFG_FLAG_INSCRICAO
+Dim CFG_EMAIL_AUDITORIA_CLIENTE, CFG_EMAIL_AUDITORIA_PROEVENTO
+Dim CFG_NUMLOJA_SCOPUS, CFG_PRINT_ONDEMAND, CFG_DB_DADOS_PWD, CFG_DB_DADOS_USER
+
+Dim CFG_FLAG_EXIBE_PF, CFG_FLAG_EXIBE_PJ
+
+
+CFG_DB_DADOS 	 	= "treinamento_dados"		'BANCO DE DADOS
+CFG_DB_DADOS_PWD	= "(AT5*hBB*5si)"		'SENHA DA DATABASE
+CFG_DB_DADOS_USER 	= "sysMetro"	    	'USUÁRIO DA DATABASE
+CFG_PATH         	= "localhost"       	'Caminho de diretorio do Cliente
+CFG_IDEMPRESA    	= "pvista"                  'ID da empresa MATRIZ: CM-COUROMODA SP-SAO PAULO HP-HOSPITALAR
+CFG_IDCLIENTE    	= "pvista"
+
+CFG_NUMLOJA_SCOPUS = ""
+
+CFG_EMAIL_AUDITORIA_CLIENTE = ""
+CFG_EMAIL_AUDITORIA_PROEVENTO = "auditormaster@gmail.com"
+
+
+CFG_FLAG_EXIBE_PF = True                 'Flag para exibir pessoa física
+CFG_FLAG_EXIBE_PJ = True                 'Flag para exibir pessoa jurídica
+
+CFG_FLAG_EXPORT_DATA = false             'Flag para permitir a exportação de dados para o portal Couronet
+CFG_FLAG_INSCRICAO = True                'Flag para exibir/permitir a inscrição em palestras/cursos
+
+CFG_PRINT_ONDEMAND   = True   'Flag para controlar a exibição da janela/dialog de impressão nas credenciais
+
+'Variáveis de definição de ambiente (no futuro poderão ir para BD ou mesmo CSS)
+Dim CFG_NUM_PER_PAGE, CFG_VERSION, CFG_WINDOW 
+Dim CFG_CORBAR_TOP, CFG_CORBAR_MIDDLE_A, CFG_CORBAR_MIDDLE_B, CFG_CORBG_FILTRO
+  
+CFG_WINDOW          = "POPUP"  'Dialogs: "POPUP" OU "NORMAL"
+CFG_NUM_PER_PAGE    = 50        'Núm. Default de ítens por página	  
+
+CFG_VERSION         = "2007.0.0"   'Versao atual do SISTEMA
+CFG_CORBAR_TOP      = "#7DACC5"
+CFG_CORBAR_MIDDLE_A = "#FFFFFF"
+CFG_CORBAR_MIDDLE_B = "#E0ECF0"
+CFG_CORBG_FILTRO    = "#7DACC5"
+
+
+Dim CFG_SIZE_LABEL_NOME, CFG_MAXLEN_LABEL_NOME
+Dim CFG_SIZE_LABEL_EMPRESA, CFG_MAXLEN_LABEL_EMPRESA
+
+CFG_SIZE_LABEL_NOME = 5
+CFG_MAXLEN_LABEL_NOME = 40
+CFG_SIZE_LABEL_EMPRESA = 4
+CFG_MAXLEN_LABEL_EMPRESA = 25
+
+Dim CFG_PATH_VISA
+
+CFG_PATH_VISA = "c:\Inetpub\wwwroot\componentes_vbv\"
+%>

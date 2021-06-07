@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<title>Declaração de Quitação de Débitos</title>
+</head>
+
+<body>
+<table width='100%' height='100%'>
+	<tr>
+		<td valign='top'>
+			<table align='left' border='0' height='100%'>
+				<tr>
+					<td align='left'><img src='https://tradeunion.proevento.com.br/_tradeunion/img/LogoMarca_ABFM.gif'></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign='middle'>
+			<table>
+				<tr>
+					<td>
+						<br><center><br><br><br><h2>DECLARAÇÃO DE QUITAÇÃO DE DÉBITOS<br /></h2><BR /><br><br><br>
+						</center>
+						
+						<div style='font-size:22px; text-indent:4em;' align='justify'>
+						
+							A Associação Brasileira de Física Médica (ABFM), declara para os devidos fins que [NOME], 
+							inscrito(a) no CPF sob o nº [CPF], membro efetivo desde [DT_ADMISSAO_SOCIO], sendo sócio nº [NUMERO_SOCIO], 
+							cumpriu todas as suas obrigações, não havendo nenhum débito pendente de qualquer natureza até a presente data. 
+						<br /><BR />
+						São Paulo, [DATA_EXTENSO].<br /><BR />
+						
+						<BR /><BR /><BR />
+						Sandra R O Borges<br />
+						Secretaria Geral – ABFM<br />
+						e-mail: secretariageral@abfm.org.br
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	
+	<tr align='right'>
+		<td><img src='https://chart.googleapis.com/chart?cht=qr&chs=350&chl=https://tradeunion.proevento.com.br/abfm/verificaDoc.php?var_cod={CHAVE_VERIFICACAO]' /></td>
+	</tr>
+	<tr align='right'>
+		<td><font size='-1'>Leia o QRCode acima ou acesse o link abaixo para verificação da autenticidade do documento: 
+https://tradeunion.proevento.com.br/abfm/verificaDoc.php?var_cod=[CHAVE_VERIFICACAO]</font></td>
+	</tr>	
+	
+</table>
+
+
+
+</body>
+</html>

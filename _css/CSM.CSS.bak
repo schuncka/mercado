@@ -1,0 +1,276 @@
+.Tahomacinza9 { color: #999999; text-decoration: none; font-size: 9px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza9:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza9:visited { color: #CECECE;}
+
+.Tahomacinza10 { color: #999999; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza10:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza10:visited { color: #CECECE;}
+
+.Tahomacinza11 { color: #999999; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza11:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza11:visited { color: #CECECE;}
+
+.Tahomacinza12 { color: #999999; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza12:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza12:visited { color: #CECECE;}
+
+.Tahomacinza13 { color: #999999; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza13:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza13:visited { color: #CECECE;}
+
+.Tahomavermelha9 { color: #FF0000; text-decoration: none; font-size: 9px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha9:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha9:visited { color: #FF0000;}
+
+.Tahomavermelha10 { color: #FF0000; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha10:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha10:visited { color: #FF0000;}
+
+.Tahomavermelha11 { color: #FF0000; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha11:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha11:visited { color: #FF0000;}
+
+.Tahomavermelha12 { color: #FF0000; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha12:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha12:visited { color: #FF0000;}
+
+.Tahomavermelha13 { color: #FF0000; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha13:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha13:visited { color: #FF0000;}
+
+.Tahomaazul9 { color: #90A9FA; text-decoration: none; font-size: 9px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul9:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul9:visited { color: #90A9FA;}
+
+.Tahomaazul10 { color: #90A9FA; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul10:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul10:visited { color: #90A9FA;}
+
+.Tahomaazul10hover { color: #90A9FA; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul10hover:hover { color: #CCCCCC; text-decoration: none;}
+a.Tahomaazul10hover:visited { color: #90A9FA;}
+
+.Tahomaazul11 { color: #90A9FA; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul11:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul11:visited { color: #90A9FA;}
+
+.Tahomaazulforte11 { color: #003060; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazulforte11:hover { color: #90A9FA; text-decoration: none;}
+
+.Tahomaazulforte12 { color: #003060; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazulforte12:hover { color: #90A9FA; text-decoration: none;}
+
+.Tahomaazul12 { color: #90A9FA; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul12:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul12:visited { color: #90A9FA;}
+
+.Tahomaazul13 { color: #90A9FA; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul13:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul13:visited { color: #90A9FA;}
+
+.Tahomapreta10 { color: #000000; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta10:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta10:visited { color: #000000;}
+
+.Tahomapreta11 { color: #000000; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta11:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta11:visited { color: #000000;}
+
+.Tahomapreta12 { color: #000000; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta12:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta12:visited { color: #000000;}
+
+.Tahomapreta13 { color: #000000; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta13:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta13:visited { color: #000000;}
+
+.edbutton { background-color: #cecece; font-family: Tahoma, Verdana; font-size: 9px; font-style: normal; font-weight: bold; color: #000000;
+BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; WIDTH: 45px;}		 	
+
+.fieldbranco { font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #212E56; background-color: #FFFFFF ; clip:  rect(   ); width: 120px}
+
+.fieldcinza { font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #212E56; background-color: #CFCFCF ; clip:  rect(   ); width: 130px}
+
+.arial14 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #231f20; text-decoration: none}
+.arial14Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #231f20; text-decoration: none; font-weight: bold}
+.arial12 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #231f20; text-decoration: none}
+.arial12Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #231f20; text-decoration: none; font-weight: bold}
+.arial11 {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #231f20; text-decoration: none}
+.arial11Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #231f20; text-decoration: none; font-weight: bold}
+.arial10 {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #231f20; text-decoration: none}
+.arial10Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #231f20; font-weight: bold; text-decoration: none}
+.arial8 { font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #231f20; text-decoration: none}
+.arial8Bold { font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #231f20; text-decoration: none; font-weight: bold}
+
+.textbox30 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 30px}
+.memobox { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 180px; height: 80px}
+.textbox70 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 70px}
+.textbox100 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 100px}
+.textbox110 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 110px}
+.textbox180 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 180px}
+.checkbox {  border: 1px #A5ACB2 solid; clip:   rect(   ); height: 20px; width: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px}
+.textbox180transparente { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 0px solid; width: 180px }
+
+.fieldsearchbig{
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	clip:  rect(   );
+	width: 250px;
+	border: 1px solid #333333;
+	
+}
+
+.fieldsearch {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	clip:  rect(   );
+	width: 80px;
+	border: 1px solid #333333;
+	
+}
+
+td {font-family:Tahoma;font-size:11px;}
+a {color:#686868}
+a:hover {color:#999999}
+.cap {font-weight:bold;text-decoration:none;}
+.menu {color:#000000;text-decoration:none;}
+
+.textbox400 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 400px;
+}
+.textbox380 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 380px;
+}
+.textbox380media {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 380px;
+	height : 100;
+}
+
+.textbox380alta {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 380px;
+	height : 200;
+}
+
+.textbox
+ {
+	font-family: Courier New, Courier, monospace;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: #FFFFFF 1px solid;   
+   	width: 740px;
+    height : 398px;   /* 398 */
+	Text-transform : uppercase;
+}
+
+.textboxcredencial {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: #000000;
+	border: #FFFFFF 1px solid;   
+   	width: 740px;
+	height : 300px;  
+	Text-transform : uppercase;
+}
+
+.textbox250 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 250px;
+}
+.arialNarrow12Bold {
+font-family: "Arial Narrow", Arial, Verdana; font-size: 14px; color: #231f20; text-decoration: none; font-weight: bold
+}
+
+.arial40 {
+font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: #231f20; text-decoration: none; font-weight: normal
+}
+
+.arial30 {
+font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #231f20; text-decoration: none; font-weight: normal
+}
+
+.textboxtransparente {
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: 0px solid
+}
+.textboxlaranja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #231f20;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #FFCC66;
+	border: 1px solid #FFCC66;
+	text-align: right;
+
+
+
+
+}
+.fieldsearchnosize {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #FFFFFF;
+	clip:  rect(   );
+	border: 1px solid #333333;
+	text-align: center;
+
+}
+.textboxcontrole {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	color: #000000;
+	background-color: #EFEFEF;
+	border: 1px solid #000000;
+	width: 400px;
+	height : 60px;
+	Text-transform : uppercase;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+.textbox50 {
+font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 50px
+}
+.textbox20 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 20px;
+	text-align: center;
+
+}
+.arial9 {
+font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #000000; text-decoration: none
+}
+.arial26 {
+
+font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #231f20; text-decoration: none; font-weight: normal
+}
+.arial4 {
+font-family: Arial, Helvetica, sans-serif; font-size: 4px; color: #231f20; text-decoration: none
+}
+.arial6 {
+
+font-family: Arial, Helvetica, sans-serif; font-size: 6px; color: #231f20; text-decoration: none
+}

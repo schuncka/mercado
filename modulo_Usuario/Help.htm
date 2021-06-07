@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>VirtualBOSS HELP: modulo_USUARIO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author"		 content=“Alessander Oliveira”>
+<meta name="Description" content=“VirtualBOSS - application help for MODULO_USUARIO”></head>
+<body bgcolor="#FFFFFF" style="font-family:Tahoma; size:10px; color:#666666; line-height:25px; vertical-align:top;">
+<table style="width:100%; border:0px; background:#FFFFFF; text-align:left;" cellpadding="0" cellspacing="0">
+
+  <tr><td height="30" colspan="2" bgcolor="#EDF2F6" style="vertical-align:middle">&nbsp;VirtualBOSS.<b>modulo_USUARIO</b></td></tr>	
+  <tr><td height="40" colspan="2"></td></tr>	
+
+  <tr>
+    <td colspan="2" valign="top">
+      Por vezes denominados internautas, utilizadores ou usu&aacute;rios ( &quot;users&quot;), s&atilde;o identifica&ccedil;&otilde;es &uacute;nicas (User ID - Identifica&ccedil;&atilde;o do usu&aacute;rio) que, em conjunto com uma senha,  permitem a utiliza&ccedil;&atilde;o do sistema por qualquer indiv&iacute;duo. <br />
+      <br />
+      Este cadastro de usu&aacute;rio faz o v&iacute;nculo a uma  ENTIDADE espec&iacute;fica de origem,  tendo como exemplos de entidades os  cadastros de FORNECEDORES, CLIENTES ou COLABORADORES. Tamb&eacute;m podemos chamar esta abstra&ccedil;&atilde;o de &quot;Conta de Usu&aacute;rio&quot;.  
+	  <br />
+	  <br />
+	  Um COLABORADOR, para  utilizar o sistema, necessita  um  USU&Aacute;RIO cadastrado relacionado desta forma aos seus dados de ENTIDADE (no caso: colaborador). Um cadastro de usu&aacute;rio &eacute; uma identifica&ccedil;&atilde;o &uacute;nica chamada de USER ID (ou simplesmente ID), que &eacute; o seu &quot;apelido&quot; que, junto a sua senha de acesso, lhe permitir&aacute; &quot;logar&quot; (efetuar &quot;login&quot;, ou seja, ter acesso ao VirtualBOSS) para utiliza&ccedil;&atilde;o do sistema. 
+	  
+	  Cada conta de usu&aacute;rio possui dados espec&iacute;ficos do mesmo, como: e-mail, nome, al&eacute;m dos principais USER_ID e SENHA que s&atilde;o utilizados para identific&aacute;-lo dentro do sistema e relacionar suas  permiss&otilde;es de acesso a cada opera&ccedil;&atilde;o com direito disponibilizado por um m&oacute;dulo.	</td>
+  </tr>
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr><td colspan="2" valign="top"><b>Grupos de usuários:</b></td></tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#FF8000"></td>
+    <td valign="top" style="padding-left:10px;">
+	  O controle das permiss&otilde;es dos usu&aacute;rios se d&aacute; atrav&eacute;s dos direitos sobre as opera&ccedil;&otilde;es de cada aplica&ccedil;&atilde;o, de forma mais individual e abrangente poss&iacute;vel. A classifica&ccedil;&atilde;o de usu&aacute;rios em GRUPOS &eacute; utilizada para diferenci&aacute;-los em conjuntos maiores definindo modo de abertura/opera&ccedil;&atilde;o do sistema, telas e interface para cada caso:
+	    <ul>
+		  <li>
+			<b>NORMAL</b>: Grupo padr&atilde;o dos usu&aacute;rios em geral. Mais indicado  ser usado para contas de usu&aacute;rios de COLABORADORES.		  </li>
+		  <br>
+		  <li>
+			<b>CLIENTE</b>: Todo usu&aacute;rio que &eacute; relativo a um elemento da ENTIDADE CLIENTE (ou mesmo fornecedor) indica ao sistema que este deve entrar em modo HELPDESK, pemitindo que este usu&aacute;rio, que representa o seu CLIENTE, opere dentro destas caracter&iacute;sticas do sistema visualizando, criando e interagindo com chamados de d&uacute;vidas, sugest&otilde;es, problemas e altera&ccedil;&otilde;es.		  </li>
+		  <br>
+		  <li>
+			<b>MANAGER</b>: Grupo especial para contas de usu&aacute;rios COLABORADORES que tenham uma caracter&iacute;stica de GERENCIAMENTO, pois independente da parte de direitos, usu&aacute;rios deste grupo tem acesso e visualizam funcionalidades especiais em alguns m&oacute;dulos onde considera-se pertinente (* listadas abaixo).		  </li>
+		  <br>
+		  <li>
+			<b>SUPERUSER(SU)</b>: Recomendado que exista apenas uma conta de usu&aacute;rio deste tipo e &eacute; dado acesso a ela a modifica&ccedil;&otilde;es em banco de Dados e outras caracter&iacute;sticas. O sistema &eacute; entregue com apenas um usu&aacute;rio SU (_athenas) que serve, dentre outras coisas, para que a nossa equipe de suporte possa ter acesso ao sistema a fim de melhor identificar uma ocorr&ecirc;ncia.		  </li>
+	  </ul>
+	  <br />
+    <b>Nota: </b>Lista m&oacute;dulos e funcionalidades/caracter&iacute;sticas espec&iacute;ficas no tratamento de usu&aacute;rios do grupo MANAGER:<br />
+    modulo_ACCOUNT, modulo_AGENDA, modulo_AVISO_CFG, modulo_BS (ATIVIDADE), modulo_CATEGORIAS, modulo_CHAMADO, modulo_HORARIO, modulo_TODOLIST (TAREFAS) , modulo_PROCESSO e modulo_USUARIO. <br />
+    <br /></td>
+  </tr>
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr><td colspan="2" valign="top"><b>Permissões de acesso (direitos):</b></td></tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#0099FF"></td>
+    <td valign="top" style="padding-left:10px;">
+          <b>Conceito de Aplicação/Módulo</b>
+		  <br />
+		  <br />
+          Considerando a palavra &quot;Aplica&ccedil;&atilde;o&quot; como sin&ocirc;nima de &quot;M&oacute;dulo&quot;: onde determinado grupo de a&ccedil;&otilde;es sobre uma entidade, conjunto de tabelas ou qualquer abstra&ccedil;&atilde;o de cadastros pode ser realizada, temos neste sistema diversos m&oacute;dulos acess&iacute;veis aos usu&aacute;rios cadastrados no sistema, relacionando estas a&ccedil;&otilde;es com permiss&otilde;es de opera&ccedil;&atilde;o e acesso as mesmas que podem ser configuradas neste nesta aplica&ccedil;&atilde;o corrente, para cada usu&aacute;rio.<br />
+          <br />
+		  Cada m&oacute;dulo possui um conjunto de a&ccedil;&otilde;es que s&atilde;o pass&iacute;veis de se registrar um direito de execu&ccedil;&atilde;o sobre ela para cada usu&aacute;rio cadastrado, onde podemos resumir o conceito em 
+		  A&ccedil;&otilde;es  e Direitos, onde:
+		  <br />
+		  <br />
+          <div style="background-color:#E9E9E9; width:90%; height:30px; padding:10px 10px 10px 10px;">&quot;a&ccedil;&atilde;o&quot; &eacute; uma opera&ccedil;&atilde;o da aplica&ccedil;&atilde;o e &quot;direito&quot; &eacute; a permiss&atilde;o de executar uma determinada a&ccedil;&atilde;o.</div>
+          <p><br />
+            <b>A aplica&ccedil;&atilde;o e suas a&ccedil;&otilde;es</b><br />
+		    <br />
+		    Uma aplica&ccedil;&atilde;o (m&oacute;dulo) possui opera&ccedil;&otilde;es que s&atilde;o pass&iacute;veis de controle de permiss&otilde;es, exemplo: este m&oacute;dulo de USU&Aacute;RIOS possui as opera&ccedil;&otilde;es de <strong>INS</strong>, <strong>UPD</strong>, <strong>DEL</strong>, <strong>COPY</strong>, <strong>UPD_DIR</strong> e <strong>VIEW</strong> (Inser&ccedil;&atilde;o, Altera&ccedil;&atilde;o, Dele&ccedil;&atilde;o, C&oacute;pia, Altera&ccedil;&atilde;o de Direitos e Visualiza&ccedil;&atilde;o). Desta forma, para cada conta de usu&aacute;rio, &eacute; poss&iacute;vel definir quais opera&ccedil;&otilde;es ele pode ou n&atilde;o realizar neste ou em qualquer outro m&oacute;dulo determinado. <br />
+		    <br />
+		    <b>O usu&aacute;rio e seus direitos</b><br />
+		    <br />
+		  Cada usu&aacute;rio tem ou n&atilde;o a a&ccedil;&atilde;o relativa a aplica&ccedil;&atilde;o, ou seja, uma vez que o m&oacute;dulo de usu&aacute;rios tem estas opera&ccedil;&otilde;es <strong>INS</strong>, <strong>UPD</strong>, <strong>DEL</strong>, <strong>COPY</strong>, <strong>UPD_DIR</strong> e <strong>VIEW</strong>, cada usu&aacute;rio dever&aacute; ter ou n&atilde;o permiss&atilde;o em cada uma delas dentro desta aplica&ccedil;&atilde;o. Exemplo: <br />
+	  </p>
+          <div style="background-color:#E9E9E9; width:90%; height:100px; padding:10px 10px 10px 10px;">
+          <p>USER_ID......: fulano<br />
+            APLICA&Ccedil;&Atilde;O.: modulo_usuario (opera&ccedil;&otilde;es: INS, UPD,  DEL,  COPY, UPD_DIR e VIEW)<br />
+            DIREITOS....: <strong>INS=TRUE</strong>//<strong>UPD=TRUE</strong>//<strong>DEL=</strong>FALSE//<strong>COPY=</strong>FALSE//<strong>UPD_DIR=</strong>FALSE//<strong>VIEW=TRUE</strong></p>
+	  </div>
+	 <br />
+    </td>
+  </tr>
+
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr>
+    <td colspan="2" valign="top"><b>CAMPOS, &quot;REGRA de NEG&Oacute;CIO&quot; e FEATURES </b></td>
+  </tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#009966"></td>
+    <td valign="top" style="padding-left:10px;">
+      <p>Dentre os campos existentes para o cadastro ao qual este m&oacute;dulo trabalha, destacamos abaixo apenas os de especial relev&acirc;ncia, com rela&ccedil;&atilde;o a alguma &quot;regra de neg&oacute;cio&quot; ao qual tal campo se relacione, a saber:<br />
+        <br />
+        <b>ID Usu&aacute;rio</b><strong>:</strong> ID - identificador &uacute;nico do usu&aacute;rio em todo sistema (at&eacute; 50 caracteres) <br />
+        <strong>Apelido:</strong> Este campo determina o NOME VIS&Iacute;VEL para o cliente externo (que pode abrir chamados).<br />
+        <strong>Entidade/C&oacute;digo:</strong> Relaciona este usu&aacute;rio a uma entidade, por exemplo, Colaboradores, Clientes e/ou Fornecedores<br />
+        <strong>Grupo:</strong> *citado acima no t&oacute;pico grupos de usu&aacute;rios        <br />
+        <strong>Entrada:</strong> determina qual o painel inicial que este usu&aacute;rio deve visualizar ao entrar no sistema        <br />
+        <strong>Chamados de:</strong> determina quais chamados, ou melhor chamados &quot;de quem&quot; este usu&aacute;rio deve ver/atender - isto interfere diretamente na visualiza&ccedil;&atilde;o fornecida pelo <em>&quot;Painel Padr&atilde;o&quot;</em>, onde os chamados dos clientes s&atilde;o apresentados para serem atendidos.<br />
+      </p>
+      <hr /><br />
+		  <b>Regras de neg&oacute;cios</b><br />
+		  <br />
+          Este m&oacute;dulo se caracteriza por regras simples, mas ressaltamos  que ele trabalha com a parte chave do sistema, ou seja, seus USU&Aacute;RIOS e a tudo que ele se relaciona. <br />
+          <br />
+          <br />
+          <div style="background-color:#E9E9E9; width:90%; height:120px; padding:10px 10px 10px 10px;">Observa&ccedil;&atilde;o: LOGIN de SU -  &eacute; poss&iacute;vel efetuar login no sistema com qualquer usu&aacute;rio desde que com uma senha de um usu&aacute;rio SU, logo, recomendamos fortemente que o sistema seja configurado com poucos SUPERS SU e que suas senhas sejam de alt&iacute;ssima seguran&ccedil;a (e pouco prov&aacute;veis de usu&aacute;rios comuns terem ou at&eacute; mesmo a possibilidade de n&atilde;o se ter usu&aacute;rios SU, conforme o caso, somente o usu&aacute;rio SU que n&oacute;s, os fornecedores do sistema temos para poder dar suporte ao mesmo. </div>
+          <br />
+
+		  <br /><hr /><br />
+		  <b>Features</b><br />
+		  <br />
+          Al&eacute;m das fun&ccedil;&otilde;es b&aacute;sicas de qualquer m&oacute;dulo do sistema - Inserir, Alterar, Remover e Pesquisar (consideramos um m&oacute;dulo como composto de forma abstrata sempre por estes elementos: dialog(s), filtro(s) e grade de dados), podemos ter features extras conforme o caso: <br />
+          <br />
+          <b>1. &quot;menu combo</b><strong>&quot;</strong>.<br />
+		  <ul>
+			<li>Clonar direitos: permite a clonagem (c&oacute;pia) de direitos de um usu&aacute;rio para outro.</li>
+			<li>Clonar atalhos: permite a clonagem (c&oacute;pia) dos atalhos exibidos na barra superior do <em>&quot;Painel Padr&atilde;o&quot;</em>.</li>
+		  </ul>
+          <b>2. &quot;&iacute;cones de a&ccedil;&atilde;o</b><strong>&quot; da grade de dados:</strong><br />
+          <ul>
+            <li>Configurar DIREITOS: acesso a dialog de confiogura&ccedil;&atilde;o de direitos do usu&aacute;rio em quest&atilde;o.</li>
+            <li>Copiar usu&aacute;rio: permite a c&oacute;pia de um usu&aacute;rio, juntamente com seus direitos de acesso.</li>
+    </ul><strong><br />
+    </strong></td>
+  </tr>
+
+  <tr><td height="40" colspan="2"></td></tr>	
+  <tr>
+    <td width="20" valign="top" bgcolor="#F9F9F9"></td>
+    <td valign="top" style="padding-left:10px;">
+		  <div style=" width:90%; height:130px; background-color:#F9F9F9;padding-top:10px; padding-left:20px; border:1px dotted #CCCCCC;">		  
+		  <b>Informações sobre o documento</b><br />
+		  <ul>
+			<li>Sistema: VirtualBOSS</li>
+			<li>Aplicação: modulo_USUARIO</li>
+			<li>Copyright: <b>Grupo PROEVENTO</b> - T E C H N O L O G I E S</li>
+		  </ul>
+          </div>
+    </td>
+  </tr>
+
+  <tr><td height="40" colspan="2"></td></tr>	
+</table>
+</body>
+</html>

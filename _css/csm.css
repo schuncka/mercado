@@ -1,0 +1,797 @@
+.Tahomacinza9 { color: #999999; text-decoration: none; font-size: 9px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza9:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza9:visited { color: #CECECE;}
+
+.Tahomacinza10 { color: #999999; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza10:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza10:visited { color: #CECECE;}
+
+.Tahomacinza11 { color: #999999; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza11:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza11:visited { color: #CECECE;}
+
+.Tahomacinza12 { color: #999999; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza12:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza12:visited { color: #CECECE;}
+
+.Tahomacinza13 { color: #999999; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomacinza13:hover { color: #CECECE; text-decoration: none;}
+a.Tahomacinza13:visited { color: #CECECE;}
+
+.Tahomavermelha9 { color: #FF0000; text-decoration: none; font-size: 9px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha9:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha9:visited { color: #FF0000;}
+
+.Tahomavermelha10 { color: #FF0000; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha10:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha10:visited { color: #FF0000;}
+
+.Tahomavermelha11 { color: #FF0000; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha11:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha11:visited { color: #FF0000;}
+
+.Tahomavermelha12 { color: #FF0000; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha12:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha12:visited { color: #FF0000;}
+
+.Tahomavermelha13 { color: #FF0000; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomavermelha13:hover { color: #FF0000; text-decoration: none;}
+a.Tahomavermelha13:visited { color: #FF0000;}
+
+.Tahomaazul9 { color: #90A9FA; text-decoration: none; font-size: 9px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul9:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul9:visited { color: #90A9FA;}
+
+.Tahomaazul10 { color: #90A9FA; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul10:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul10:visited { color: #90A9FA;}
+
+.Tahomaazul10hover { color: #90A9FA; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul10hover:hover { color: #CCCCCC; text-decoration: none;}
+a.Tahomaazul10hover:visited { color: #90A9FA;}
+
+.Tahomaazul11 { color: #90A9FA; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul11:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul11:visited { color: #90A9FA;}
+
+.Tahomaazulforte11 { color: #003060; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazulforte11:hover { color: #90A9FA; text-decoration: none;}
+
+.Tahomaazulforte12 { color: #003060; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazulforte12:hover { color: #90A9FA; text-decoration: none;}
+
+.Tahomaazul12 { color: #90A9FA; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul12:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul12:visited { color: #90A9FA;}
+
+.Tahomaazul13 { color: #90A9FA; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomaazul13:hover { color: #90A9FA; text-decoration: none;}
+a.Tahomaazul13:visited { color: #90A9FA;}
+
+.Tahomapreta10 { color: #000000; text-decoration: none; font-size: 10px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta10:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta10:visited { color: #000000;}
+
+.Tahomapreta11 { color: #000000; text-decoration: none; font-size: 11px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta11:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta11:visited { color: #000000;}
+
+.Tahomapreta12 { color: #000000; text-decoration: none; font-size: 12px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta12:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta12:visited { color: #000000;}
+
+.Tahomapreta13 { color: #000000; text-decoration: none; font-size: 13px; font-family: Tahoma, Verdana, Arial,  Trebuchet MS, Helvetica;}
+a.Tahomapreta13:hover { color: #000000; text-decoration: none;}
+a.Tahomapreta13:visited { color: #000000;}
+
+.edbutton { background-color: #cecece; font-family: Tahoma, Verdana; font-size: 9px; font-style: normal; font-weight: bold; color: #000000;
+BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; WIDTH: 45px;}		 	
+
+.fieldbranco { font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #212E56; background-color: #FFFFFF ; clip:  rect(   ); width: 120px}
+
+.fieldcinza { font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #212E56; background-color: #CFCFCF ; clip:  rect(   ); width: 130px}
+
+.arial14 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; text-decoration: none}
+.arial14Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #000000; text-decoration: none; font-weight: bold}
+.arial12 {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-decoration: none}
+.arial12Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-decoration: none; font-weight: bold}
+.arial11 {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none}
+.arial11Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: bold}
+.arial10 {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; text-decoration: none}
+.arial10Bold {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-weight: bold; text-decoration: none}
+.arial8 { font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #000000; text-decoration: none}
+.arial8Bold { font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #000000; text-decoration: none; font-weight: bold}
+
+.textbox30 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 30px}
+.memobox { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 180px; height: 80px}
+.textbox70 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 70px}
+.textbox100 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 100px}
+.textbox110 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 110px}
+.textbox180 { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 180px}
+.checkbox {  border: 1px #A5ACB2 solid; clip:   rect(   ); height: 20px; width: 20px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px}
+.textbox180transparente { font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 0px solid; width: 180px }
+
+#titulo_modulo {
+	padding-left:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #999999;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.fieldsearchbig{
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	clip:  rect(   );
+	width: 250px;
+	border: 1px solid #333333;
+	
+}
+
+.fieldsearch {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	clip:  rect(   );
+	width: 80px;
+	border: 1px solid #333333;
+	
+}
+
+td {font-family:Tahoma;font-size:11px;}
+a {color:#686868}
+a:hover {color:#999999}
+.cap {font-weight:bold;text-decoration:none;}
+.menu {color:#000000;text-decoration:none;}
+
+.textbox400 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 400px;
+}
+.textbox380 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 380px;
+}
+.textbox380media {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 380px;
+	height : 100;
+}
+
+.textbox380alta {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 380px;
+	height : 200;
+}
+
+.textbox
+ {
+	font-family: Courier New, Courier, monospace;
+	font-size: 12px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: #FFFFFF 1px solid;   
+   	width: 740px;
+    height : 398px;   /* 398 */
+	Text-transform : uppercase;
+}
+
+.textboxcredencial {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: #000000;
+	border: #FFFFFF 1px solid;   
+   	width: 740px;
+	height : 300px;  
+	Text-transform : uppercase;
+}
+
+.textbox250 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 250px;
+}
+.arialNarrow12Bold {
+font-family: "Arial Narrow", Arial, Verdana; font-size: 14px; color: #000000; text-decoration: none; font-weight: bold
+}
+
+.arial40 {
+font-family: Arial, Helvetica, sans-serif; font-size: 40px; color: #000000; text-decoration: none; font-weight: normal
+}
+
+.arial30 {
+font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #000000; text-decoration: none; font-weight: normal
+}
+
+.textboxtransparente {
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: 0px solid
+}
+.textboxlaranja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #FFCC66;
+	border: 1px solid #FFCC66;
+	text-align: right;
+
+
+
+
+}
+.fieldsearchnosize {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #FFFFFF;
+	clip:  rect(   );
+	border: 1px solid #333333;
+	text-align: center;
+
+}
+.textboxcontrole {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	color: #000000;
+	background-color: #EFEFEF;
+	border: 1px solid #000000;
+	width: 400px;
+	height : 60px;
+	Text-transform : uppercase;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+
+.textboxsemaforo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000000;
+	background-color: #FAFAFA;
+	border: 1px solid #CCCCCC;
+	width: 100px;
+	Text-transform : uppercase;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+	
+.textbox50 {
+font-family: Arial, Helvetica, sans-serif; font-size: 10px; border: 1px #A5ACB2 solid; width: 50px
+}
+.textbox20 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px #A5ACB2 solid;
+	width: 20px;
+	text-align: center;
+
+}
+.arial9 {
+font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #000000; text-decoration: none
+}
+.arial26 {
+
+font-family: Arial, Helvetica, sans-serif; font-size: 26px; color: #000000; text-decoration: none; font-weight: normal
+}
+.arial4 {
+font-family: Arial, Helvetica, sans-serif; font-size: 4px; color: #000000; text-decoration: none
+}
+.arial6 {
+
+font-family: Arial, Helvetica, sans-serif; font-size: 6px; color: #000000; text-decoration: none
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Estamos colocando os estilos que usamos nos sistemas e nos sites para depois removermos os acima */
+/* ------------------------------------------------------------------------------------------------ */
+
+a {  font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 11px; color: #666666; text-decoration: underline}
+a:hover { color: #999999; text-decoration: none}
+td { font-size : 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS; color: #000000;}
+/*
+ a { font-size : 11px;  font-family : Verdana, Tahoma, Arial, Trebuchet MS,  Arial; color: #666666; text-decoration: none;}
+ a:hover { font-size : 11px; font-family : Verdana, Tahoma, Arial; color: #999999;} 
+*/
+
+/*  TEXTO DE DESTAQUE DE HELP -------------------------------------------------------------------- */
+.texto_help_gde { color: #7CA600; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_help_gde:hover { color: #ACC282; text-decoration: none;}
+
+.texto_help_mdo { color: #7CA600; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_help_mdo:hover { color: #ACC282; text-decoration: none;}
+
+.texto_help_peq { color: #7CA600; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_help_peq:hover { color: #ACC282; text-decoration: none;}
+
+/* TITULO CHAMADA -------------------------------------------------------------------- */
+.titulo_chamada_big { color: #666666; text-decoration: none; font-size: 14px;  font-weight: bold; font-family : Verdana, Arial, Tahoma, Trebuchet MS;}
+a.titulo_chamada_big:hover { color: #999999; text-decoration: none;}
+
+.titulo_chamada_gde { color: #666666; text-decoration: none; font-size: 12px;  font-family : Verdana, Arial, Tahoma, Trebuchet MS;}
+a.titulo_chamada_gde:hover { color: #999999; text-decoration: none;}
+
+.titulo_chamada_mdo { color: #666666; text-decoration: none; font-size: 11px;  font-family : Verdana, Arial, Tahoma, Trebuchet MS;}
+a.titulo_chamada_mdo:hover { color: #999999; text-decoration: none;}
+
+.titulo_chamada_peq { color: #666666; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Verdana, Arial, Tahoma, Trebuchet MS;}
+a.titulo_chamada_peq:hover { color: #999999; text-decoration: none;}
+
+/* TÍTULO DE SEÇÃO -------------------------------------------------------------------- */
+.titulo_corpo_gde { color: #D8000F; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.titulo_corpo_gde:hover { color: #E2404B; text-decoration: none;}
+
+.titulo_corpo_mdo { color: #D8000F; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.titulo_corpo_mdo:hover { color: #E2404B; text-decoration: none;}
+
+.titulo_corpo_peq { color: #D8000F; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.titulo_corpo_peq:hover { color: #E2404B; text-decoration: none;}
+
+/* TEXTO GERAL -------------------------------------------------------------------- */
+.texto_corpo_gde { color: #333333; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_corpo_gde:hover { color: #666666; text-decoration: none;}
+
+.texto_corpo_mdo { color: #333333; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_corpo_mdo:hover { color: #666666; text-decoration: none;}
+
+.texto_corpo_peq { color: #333333; text-decoration: none; font-size: 10px; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_corpo_peq:hover { color: #666666; text-decoration: none;}
+
+/* TEXTO DE CHAMADA (LEAD) -------------------------------------------------------------------- */
+.texto_chamada_gde { color: #FF3300; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_chamada_gde:hover { color: #5F78B0; text-decoration: none;}
+
+.texto_chamada_mdo { color: #FF3300; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_chamada_mdo:hover { color: #5F78B0; text-decoration: none;}
+
+.texto_chamada_peq { color: #FF3300; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_chamada_peq:hover { color: #5F78B0; text-decoration: none;}
+
+/*  TEXTO DE DESTAQUE -------------------------------------------------------------------- */
+.texto_destaque_gde { color: #598605; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_destaque_gde:hover { color: #ACC282; text-decoration: none;}
+
+.texto_destaque_mdo { color: #598605; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_destaque_mdo:hover { color: #ACC282; text-decoration: none;}
+
+.texto_destaque_peq { color: #598605; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_destaque_peq:hover { color: #ACC282; text-decoration: none;}
+
+/*  TEXTO DE PROMOÇÕES -------------------------------------------------------------------- */
+.texto_promocao_gde { color: #FF9900; text-decoration: none; font-size: 12px;  font-weight: bold; font-family : Tahoma, Arial, Verdana, Trebuchet MS;}
+a.texto_promocao_gde:hover { color: #7FC9A0; text-decoration: none;}
+
+.texto_promocao_mdo { color: #FF9900; text-decoration: none; font-size: 11px;  font-weight: bold; font-family : Tahoma, Arial, Verdana, Trebuchet MS;}
+a.texto_promocao_mdo:hover { color: #7FC9A0; text-decoration: none;}
+
+.texto_promocao_peq { color: #FF9900; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Tahoma, Arial, Verdana, Trebuchet MS;}
+a.texto_promocao_peq:hover { color: #7FC9A0; text-decoration: none;}
+
+/*  TEXTO DE CONSTRASTE -------------------------------------------------------------------- */
+.texto_contraste_gde { color: #FFFFFF; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_contraste_gde:hover { color: #F2F2F2; text-decoration: none;}
+
+.texto_contraste_mdo { color: #FFFFFF; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_contraste_mdo:hover { color: #F2F2F2; text-decoration: none;}
+
+.texto_contraste_peq { color: #FFFFFF; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_contraste_peq:hover { color: #F2F2F2; text-decoration: none;}
+
+.texto_contrastemenu_peq { color: #7D7A00; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_contraste_peq:hover { color: #B0AC00; text-decoration: none;}
+
+/*  TEXTO DE FILTRO DA BARRA DE PESQUISA  -------------------------------------------------------------------- */
+.texto_filtrobarra_gde { color: #FFFFFF; text-decoration: none; font-size: 12px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_filtrobarra_gde:hover { color: #ACC282; text-decoration: none;}
+
+.texto_filtrobarra_mdo { color: #FFFFFF; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_filtrobarra_mdo:hover { color: #ACC282; text-decoration: none;}
+
+.texto_filtrobarra_peq { color: #FFFFFF; text-decoration: none; font-size: 10px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_filtrobarra_peq:hover { color: #ACC282; text-decoration: none;}
+
+/* TÍTULO DE GRADE -------------------------------------------------------------------- */
+.titulo_grade_gde { color: #FFFFFF; text-decoration: none; font-size: 12px;  font-weight: none; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.titulo_grade_gde:hover { color: #FFFFFF; text-decoration: none;}
+
+.titulo_grade_mdo { color: #FFFFFF; text-decoration: none; font-size: 11px;  font-weight: none; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.titulo_grade_mdo:hover { color: #FFFFFF; text-decoration: none;}
+
+.titulo_grade_peq { color: #FFFFFF; text-decoration: none; font-size: 10px;  font-weight: none; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.titulo_grade_peq:hover { color: #FFFFFF; text-decoration: none;}
+
+/*  LINK MATERIA ---------------------------------------------------------------------------------- */
+.linkmateria { color: #336699; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.linkmateria:hover { color: #99B2CC; text-decoration: none;}
+
+/*  SUBLINK ---------------------------------------------------------------------------------- */
+.sublink { color: #282828; text-decoration: none; font-size: 9px;  font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.sublink:hover { color: #6A7D38; text-decoration: none;}
+
+/*  MENU ---------------------------------------------------------------------------------- */
+.menu {	color: #FFFFFF;	text-decoration: none; font-size: 9px;	font-weight: bold; font-family : Verdana, Arial, Tahoma, Trebuchet MS;}
+a.menu:hover { color: #999DA3; text-decoration: none;}
+
+/*  MENU VISITED POPUP---------------------------------------------------------------------------------- */
+.menupop { color: #92BADE; text-decoration: none; font-size: 11px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menupop:hover { color: #92BADE; text-decoration: none;}
+
+/*  TÍTULO DO MENU FX---------------------------------------------------------------------------------- */
+.menu_fx { color: #AEAEAE; text-decoration: none; font-size: 10px;  font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menu_fx:hover { color: #CCCCCC; text-decoration: none;}
+
+/*  MENUBOTTOM ---------------------------------------------------------------------------------- */
+.menubottom {	color: #86A723;	text-decoration: none; font-size: 11px;	 font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menubottom:hover { color: #86A723; text-decoration: underline;}
+
+/*  MENUBOTTOM02 ---------------------------------------------------------------------------------- */
+.menubottom02 {	color: #DD5800;	text-decoration: none; font-size: 10px;	 font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menubottom02:hover { color: #DD5800; text-decoration: none;}
+
+/*  MENUBOTTOM03 ---------------------------------------------------------------------------------- */
+.menubottom03 {	color: #979300;	text-decoration: none; font-size: 10px;	 font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menubottom03:hover { color: #979300; text-decoration: none;}
+
+/*  MENUBOTTOM04 ---------------------------------------------------------------------------------- */
+.menubottom04 {	color: #FFFFFF;	text-decoration: none; font-size: 10px;	 font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menubottom04:hover { color: #FFFFFF; text-decoration: none;}
+
+/*  MENUBOTTOM05 ---------------------------------------------------------------------------------- */
+.menubottom05 {	color: #FFFFFF;	text-decoration: none; font-size: 10px;	 font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.menubottom05:hover { color: #FFFFFF; text-decoration: none;}
+
+/* TEXTO DE VALORES (PRODUTOS) -------------------------------------------------------------------- */
+.texto_valor_parcela { color: #FF9900; text-decoration: none; font-size: 20px; font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_valor_parcela:hover { color: #FF9900; text-decoration: none;}
+
+.texto_valor { color: #999999; text-decoration: none; font-size: 20px; font-weight: bold; font-family : Arial, Verdana, Tahoma, Trebuchet MS;}
+a.texto_chamada_mdo:hover { color: #999999; text-decoration: none;}
+
+.edtextlivre { 
+font-family:verdana,arial,helvetica;
+font-size:10px;
+color:black;
+background-color: #FFFFFF;
+BORDER-RIGHT: #7F9DB9 1px solid;   
+BORDER-TOP: #7F9DB9 1px solid;   
+BORDER-LEFT: #7F9DB9 1px solid;      
+BORDER-BOTTOM: #7F9DB9 1px solid  
+}
+
+
+.edtext {    
+		 		background-color: #FFFFFF;   
+		 		font-family: Arial;   
+		    	font-size: 10px;   
+		    	font-style: normal;   
+		    	font-weight: bold;   
+		    	color: #333333;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;      
+		    	BORDER-BOTTOM: #999999 1px solid  
+
+		    }
+			
+.edtextreadonly {    
+		 		background-color: #DDDDDD;   
+		 		font-family: Arial;   
+		    	font-size: 10px;   
+		    	font-style: normal;   
+		    	font-weight: bold;   
+		    	color: #333333;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;      
+		    	BORDER-BOTTOM: #999999 1px solid  
+
+		    }
+.edtext0 {    
+		 		background-color: #FFFFFF;   
+		 		font-family: Verdana;   
+		    	font-size: 10px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	WIDTH: 30px;  
+		    	BORDER-RIGHT: #7F9DB9 1px solid;   
+		    	BORDER-TOP: #7F9DB9 1px solid;   
+		    	BORDER-LEFT: #7F9DB9 1px solid;      
+		    	BORDER-BOTTOM: #7F9DB9 1px solid  
+		    }
+
+.edtext1 {    
+		 		background-color: #E9E9E9;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	WIDTH: 100px;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+
+
+.edtext2 {    
+		 		background-color: #E9E9E9;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	WIDTH: 120px;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+.edtext3 {    
+		 		background-color: #E9E9E9;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	WIDTH: 80px;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+			
+
+.edtext4 {    
+		        background-color: #E9E9E9;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	WIDTH: 300px;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+			
+.edtext5 {    
+		 		background-color: #FFFFFF;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #28166E;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	WIDTH: 200px;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+			
+.edtext6 {    
+		 		background-color: #E9E9E9;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	WIDTH: 250px;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+
+.edtext7 {    
+		 		background-color: #E9E9E9;   
+		 		font-family: Verdana;   
+		    	font-size: 9px;   
+		    	font-style: normal;   
+		    	font-weight: normal;   
+		    	color: #666666;   
+		    	BORDER-RIGHT: #999999 1px solid;   
+		    	BORDER-TOP: #999999 1px solid;   
+		    	BORDER-LEFT: #999999 1px solid;   
+		    	BORDER-BOTTOM: #999999 1px solid  
+		    }
+
+.edbutton { 
+                background-color: #E9E9E9;
+				font-family: Verdana;
+				font-size: 9px;
+				font-style: normal;
+				font-weight: bold;
+				color: #666666;
+				BORDER-RIGHT: #999999 1px solid;
+				BORDER-TOP: #999999 1px solid;
+				BORDER-LEFT: #999999 1px solid;
+				BORDER-BOTTOM: #999999 1px solid;
+				}
+				
+.bgfixed
+{
+BACKGROUND-POSITION: left top; 
+BACKGROUND-REPEAT: repeat;
+}
+
+.Background
+{
+BACKGROUND-POSITION: left top; 
+BACKGROUND-REPEAT: no-repeat;
+}
+
+.BackgroundRg
+{
+BACKGROUND-POSITION: right; 
+BACKGROUND-REPEAT: no-repeat;
+}
+
+.BgRg
+{
+BACKGROUND-POSITION: right; 
+BACKGROUND-REPEAT: repeat;
+}
+.edtextimg{
+				font-size: 11px;
+				background-image: url(../img/EditLogin.jpg);
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				height: 20px
+}
+
+.label { font-family:Verdana, Tahoma, Arial; font-size:11px; font-weight: bold; color: #000000; background-color: #FFFFFF; 
+    BORDER-RIGHT: 0px;   
+    BORDER-TOP: 0px;   
+    BORDER-LEFT: 0px;      
+	BORDER-BOTTOM: 0px 
+}
+
+
+/* ------------------------------------------------ */
+
+
+.divbut {
+  display		: block; 
+  border		: 1px solid #848484; 
+  width			: 100%; 
+  height		: 25px;
+  text-align	: left;
+  vertical-align: middoe;
+  padding		: 2px 2px 2px 2px;
+  margin-bottom	: 2px;
+  font-size		: 12px;  
+  font-weight	: bold; 
+  font-family	: Verdana, Arial, Tahoma, Trebuchet MS;
+  font-coloro	: #848484;
+}
+
+.boxrounded {
+
+width: 95%;
+padding: 15px;
+background: #f0f0f0;
+overflow:auto;
+
+/* Border style */
+border: 1px solid #cccccc;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px; 
+
+/* Border Shadow */
+-moz-box-shadow: 2px 2px 2px #cccccc;
+-webkit-box-shadow: 2px 2px 2px #cccccc;
+box-shadow: 2px 2px 2px #cccccc;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------- */
+/* INI:MENU GRADE PARA ICONES DE AÇÃO*/
+/*--------------------------------------------------------------------------------------------------------------------------------- */
+.menugrade { /*configuração de texto da área onde esta a figura podento receber também os botões de ação*/
+  font-family: 'Lucida Grande', Helvetica, Arial-Black, sans-serif; 
+  /*text-align: right;
+  /*background: #FFF; #E3CAA1;*/
+  /*color:#FF0;*/
+}
+.menugrade ul {
+  text-align: left;
+  display:compact; /*permite que a figura carregue ou não como simbolo do botão*/
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  overflow:none;
+ 
+}
+
+.menugrade ul li {  /*fundo da imagem  posicionado o bloco com opções de ação*/
+  font:  12px/18px sans-serif;
+  display: inline-block;
+  margin-right: 0px;
+  position: relative;
+  background: #FFF; 
+  cursor: pointer;
+  /*-webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;*/  
+  
+  
+  
+  
+}
+.menugrade ul li:hover		 { background: #EFEFEF; color:#CCC; z-index:auto; text-decoration:none; width:90%} /*painel da imagem quando passa o mouse*/
+.menugrade ul li ul 		 {                               /* Î---A propriedade z-index especifica a ordem de pilha de um elemento.*/
+  border: 1px solid ;
+  padding-left: 1px;
+  position: absolute;
+  background:#FFF;
+  top: 1px;                     /*Especifica a posição de topo de um elemento posicionado*/
+  left: 20px;                   /*Especifica a posição esquerda de um elemento posicionado*/
+  width: 130px;
+  /*height:90px;*/              /*tamanho da box ela tira o absolute e deixa transparente a borda por isso foi comentada*/
+  opacity: 100%;                /* transparência*/
+  display: none;                /*mantém o painel escondido*/
+  visibility: visible;
+  padding-bottom: 8px;
+  box-shadow: 1px 1px 1px 1px; #EFEFEF; /*sombra no box*/
+}
+
+.menugrade ul li ul li       { 
+  background:#FFF; 
+  display:block ; 
+  color:#CCC;  
+  font-size:15px; 
+  padding-left: 12px;
+  padding-top:4px;
+  
+  
+  
+  
+} /*lista carregada pela imagem*/
+
+.menugrade ul li ul li:hover { 
+  background-color:#EFEFEF;
+  text-decoration:none;
+
+}                  
+
+.menugrade ul li:hover ul    { 
+  display: block; 
+  opacity: 1; 
+  visibility: visible;  
+  color:#CCC;  
+  border-width:thin ;
+  
+
+} /*borda do painel*/
+
+.menugrade a:link	 { text-decoration: none; color: #999; line-height:23px; font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px;}
+.menugrade a:active  { text-decoration: none; color: #999; line-height:23px; font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px;}
+.menugrade a:hover	 { text-decoration: none; color: #999; line-height:23px; font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px;}
+.menugrade a:visited { text-decoration: none; color: #999; line-height:23px; font-family:  "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px;}
+
+.menugrade :first-letter {text-decoration:underline;}
+/*--------------------------------------------------------------------------------------------------------------------------------- */
+/* FIM: MENU GRADE PARA ICONES DE AÇÃO*/
+/*--------------------------------------------------------------------------------------------------------------------------------- */

@@ -1,0 +1,3 @@
+<script>
+document.location="http://server04/proevento/";
+</script>

@@ -1,0 +1,12 @@
+' #################### Arquivo de configuração dos rótulos de módulo ##############################
+'
+' Instruções
+'
+' A disposição dos elementos deve ser: Nome_Pasta - Rótulo (com um espaço hífen e novamente um espaço entre os dois)
+'
+' Ex: CotacaoMoeda - Cotação Moeda
+'
+' Comentários é o apostrofe (')
+'
+'
+CotacaoMoeda - Cotação Moeda

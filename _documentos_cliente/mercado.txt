@@ -1,0 +1,72 @@
+Chamado #34824770
+Status:FINALIZADO
+
+Modificado em:20.08.2019 às 00h06
+
+Assunto:Suporte Técnico > Hospedagem > Windows
+
+Seu nome:
+Giuliano Ferronato
+
+Seu telefone:
+(51) 3086-8700
+
+E-mail de contato:
+mercado@clicmercado.com.br
+
+Criado por:
+[SUPORTE LOCAWEB] Joao Silva
+
+Título:
+Verificação de espaço em disco
+
+Descrição:
+Olá,
+
+Este chamado tem como motivo a verificação da existência de alguns diretórios/arquivos em seu FTP Login: (clicmercado1), precisamos entender se todos os diretórios/arquivos estão relacionados ao(s) site(s).
+
+COM BASE NISSO, DESEJAMOS ENTENDER QUAIS OS FINS DESSES DIRETÓRIOS/ARQUIVOS, PARA ANALISARMOS SE OS MESMOS ESTÃO DE ACORDO COM A NOSSA POLÍTICA DE ILIMITADOS.Caso todos os arquivos estejam em uso no site(s) por favor nos informe os links de acesso para que possamos analisar e verificar se tudo está conforme os termos abaixo:
+
+Política de Ilimitados: A política de ilimitados informa que o espaço é ilimitado enquanto os arquivos estiverem em uso no seu site, ou seja, em algum momento da navegação no site esse conteúdo deve estar em uso. Práticas com o FTP publico, servidor de Uploads, etc. não se encaixam em nossa política. http://www.locaweb.com.br/sobre-locaweb/contratos-politicas/politica-ilimitado.html
+
+Contrato: http://www.locaweb.com.br/sobre-locaweb/contratos-politicas.html
+
+CASO O CONTEÚDO NÃO ESTEJA VINCULADO AO SITE É NECESSÁRIO QUE SEJA REMOVIDO URGENTEMENTE.
+
+IMPORTANTE:
+Desativação do FTP >> A partir da data dessa notificação caso não tenha ações da sua parte o acesso ao FTP (clicmercado1) será desativado no decorrer do 3º dia.
+
+Lembrando que caso sua aplicação realize um download/upload, receberá como retorno erro, pois o mesmo estará desabilitado junto ao FTP.
+
+=========================================================
+
+Informações disponíveis em anexo neste chamado
+
+=========================================================
+
+O final do prazo, onde será efetuada a desativação automatica do ambiente FTP será no decorrer do dia 08/08/2019.
+
+Como justificar os arquivos utilizados pelo site?
+• Basta informar links do seu site que referencie os arquivos que estão nestas pastas.
+• Exemplo: Site de eventos contém 500 fotos em exibição no site para qualquer pessoa acessar
+• Link público: meusite.com.br/eventos/2015/agosto/
+• Caminho dos arquivos ocupados no servidor: /home/meulogindeftp/public_html/eventos/2015/agosto
+
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Em caso de dúvidas, poderá entrar em contato no telefone (11) 3544-0435, que é uma linha dedicada a este tipo de assunto.
+
+Contamos com a sua colaboração e desde já nos colocamos à sua total disposição.
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+
+Atenciosamente,
+
+Mantenha seus dados atualizados para facilitar um contato direto:
+https://wiki.locaweb.com.br/pt-br/Alterar_Dados_Cadastrais_e_de_Cobran%C3%A7a
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Como está meu atendimento? Entre em contato com meu coordenador para
+qualquer feedback. | Email: falecomdayane@locaweb.com.br
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬

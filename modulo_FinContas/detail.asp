@@ -1,0 +1,116 @@
+<!--#include file="../_database/athdbConnCS.asp"-->
+<!--#include file="../_database/athUtilsCS.asp"-->
+<!--#include file="../_database/secure.asp"-->
+<% 'ATENÇÃO: doctype, language, option explicit, etc... estão no athDBConn/athDBConnCS  %> 
+<% VerificaDireito "|VIEW|", BuscaDireitosFromDB("modulo_CfgPanel",Session("ID_USER")), true %>
+<%
+ Const MDL = "DEFAULT"		' - Default do Modulo...
+ Const LTB = "fin_conta"	' - Nome da Tabela...
+ Const DKN = "COD_CONTA"	' - Campo chave...
+ Const TIT = "FinContaBanco"		' - Carrega o nome da pasta onde se localiza o modulo sendo refenrencia para apresentação do modulo no botão de filtro
+
+ Dim objConn, objRS, strSQL
+ Dim strCODIGO ,Idx , strFIELD, strTYPE, strVALUE
+  
+ strCODIGO = GetParam("var_chavereg")
+  
+ If strCODIGO <> "" Then
+	  AbreDBConn objConn, CFG_DB 
+	  
+	  strSQL = "SELECT * FROM " & LTB & " WHERE " & DKN & " = " & strCODIGO
+      Set objRS = objConn.Execute(strSQL)
+
+      If Not objRS.Eof Then  
+%>
+<html>
+<head>
+<title>Mercado</title>
+<!--#include file="../_metroui/meta_css_js.inc"--> 
+</head>
+<body class="metro">
+<!-- Barra que contem o título do módulo e ação da dialog//-->
+<div class="bg-darkOrange fg-white" style="width:100%; height:50px; font-size:20px; padding:10px 0px 0px 10px;">
+   <%=TIT%>&nbsp;<sup><span style="font-size:12px">DETAIL</span></sup>
+</div>
+<!-- FIM -------------------------------Barra//-->
+<div class="container padding20">
+<table class="tablesort table hovered striped">
+    <thead>
+        <tr>
+            <th style="width:05%;" class="sortable-numeric">&nbsp;</th>
+            <th style="width:15%;" class="sortable">Campo</th>
+            <th style="width:80%;" class="sortable">Dado</th>
+        </tr>
+    </thead>
+    <tbody>
+		<% for Idx = 0 to objRS.fields.count -1 
+				strFIELD = objRS.Fields(Idx).name
+				strTYPE  = Replace(RetDataTypeEnum(objRS.Fields(Idx).type),"ad","")
+	 	        strVALUE = GetValue(objRS,strFIELD) 
+				if (lcase(DKN) = lcase(strFIELD)) then strFIELD = "<strong>" & Ucase(strFIELD) & "</strong>" end if  %> 
+            <tr>
+               <td><%=Idx%></td>
+               <td title="DB Datatype: <%=ucase(strTYPE)%>" style="cursor:help;"><%=Ucase(strFIELD)%></td>
+               <td><%=server.HTMLEncode(strVALUE)%></td>
+            </tr>
+        <% next %>
+    </tbody>
+    <tfoot bgcolor="#F8F8F8">
+        <tr>
+            <td colspan="3">
+                <div style="width:180px; height:25px; float:right; text-align:right; padding-right:5px; cursor:help;">
+                	<small class="text-left fg-teal"  title="DATA BASE TABLE REFERENCE"><%=lcase(LTB)%></small>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<%
+    strSQL = "SELECT COD_SALDO_AC,MES,ANO,VALOR,RECALCULADO,SYS_COD_USER_ULT_LCTO FROM FIN_SALDO_AC WHERE COD_CONTA=" & strCODIGO & " ORDER BY ANO,MES"
+	
+	Set objRS = objConn.Execute(strSQL)
+	
+	if not objRS.Eof then
+%>
+<table align="center" cellpadding="0" cellspacing="1" style="width:100%" class="tablesort table hovered striped">
+
+<thead>
+	<tr>
+		<th width="1%"  class="sortable"  nowrap>Cod</th>
+		<th width="10%" class="sortable-date-dmy" nowrap>Data</th>
+		<th width="10%" class="sortable-numeric" nowrap>Mês</th>		
+		<th width="10%" class="sortable-numeric" nowrap>Saldo</th>
+		<th width="1%"  nowrap>Recalc</th>
+		<!--th width="50%" class="sortable-date-dmy" nowrap>Últ. Lcto</th //-->		
+	</tr>
+ </thead>
+ <tbody style="text-align:left;">
+<% 
+      While Not objRS.Eof	
+	%>	
+	<tr>
+		<td align="right"><%=GetValue(objRS,"COD_SALDO_AC")%></td>
+		<td><%=ATHFormataTamLeft(GetValue(objRS,"MES"),2,"0")%>/<%=GetValue(objRS,"ANO")%></td>
+		<td><%=MesExtenso(GetValue(objRS,"MES"))%></td>	
+		<td align="right"><%=formatnumber(GetValue(objRS,"VALOR"),2)%></td>
+		<td align="center"><input type="checkbox" <%if GetValue(objRS,"RECALCULADO") then Response.Write("checked")%> disabled readonly></td>
+		<!--td><%=GetValue(objRS,"SYS_COD_USER_ULT_LCTO")%></td//-->		
+	</tr>
+	<% 	
+			athMoveNext objRS, ContFlush, CFG_FLUSH_LIMIT
+		wend
+	end if
+	%>
+  </tbody>
+</table>
+
+</div> <!--FIM ----DIV CONTAINER//-->  
+</body>
+</html>
+<%
+	 End If 
+      FechaRecordSet objRS
+	  FechaDBConn objConn
+ End If 
+ 'athDebug strSQL, true '---para testes'
+%>

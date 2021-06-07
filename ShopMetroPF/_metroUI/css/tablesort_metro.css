@@ -1,0 +1,262 @@
+/*******************************************************************************************************/
+/*                          ARQUIVO DE CLASSES DE ESTILO PARA TABLESORT - INÍCIO					   */
+/*******************************************************************************************************/
+
+/*
+ * 	Add the following to your CSS file should you wish the cursor to
+ * 	"wait" while the script is processing the sort
+ * 
+ *	Descomente este bloco para habilitar o cursor de 'espera' quando 
+ * 	a classe sort-active [processando] estiver ativa.
+ *
+ *	body.sort-active * { cursor:wait; }
+*/
+
+/* Isso fica sendo definido pelo default do html do METRO
+body{
+	padding:5px 5px 5px 5px;
+	border:0;
+	margin:0;
+	width:auto;
+	text-align:left;
+	font-size:12px;
+	font-family: verdana,arial,sans-serif;
+	color:#545454;
+	background-color:#ffffff;
+}
+
+.tablesort h2 span   { font-variant:small-caps; }
+.tablesort p a       { font-weight:normal; outline:none; }
+.tablesort p a:link, .tablesort p a:visited{ color:#333; text-decoration:underline; }
+.tablesort p a:hover { color:#fff; text-decoration:none;	background:#000; }
+.tablesort p a:active{ color:#000; text-decoration:underline; }
+.tablesort code      { font-family:'andale mono','lucida console','courier new',monospace; font-size:1em; }
+.tablesort p         { line-height:1.6em; margin:0 0 1em 0; }
+.tablesort h1{
+	font-weight:lighter;
+	font-family:georgia, times new roman, times, georgia, palatino, serif;
+	text-align:center;
+	margin-top:0.6em;
+	color:#000;
+	font-size:2em;
+}
+.tablesort h2{
+	font-weight:lighter;
+	font-family:verdana,arial,sans-serif;
+	text-align:center;
+	margin-top:1em;
+	color:#333;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:1.2em;
+}
+.tablesort h2 span{
+	font-variant:small-caps;
+	text-transform:none;
+}
+*/
+
+.tablesort{
+	vertical-align:top;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto 1.5em auto;
+	border-left: 0px solid #C1DAD7;   /*BORDA externa corpo*/
+	border-collapse:collapse;
+}
+.cs1{ width:30em; }
+.cs2{ width:20em; }
+.cs1 td, .cs2 td, #scientificNotation{ text-align:left; }
+
+.tablesort caption{
+	padding: 0 0 5px 0;
+	margin:0 auto;
+	width:auto;
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+.tablesort th{
+	font: bold 12px/24px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 0px solid #C1DAD7;  /*BORDA externa header*/
+	border-bottom: 0px solid #C1DAD7; /*BORDA externa header*/
+	border-top: 0px solid #C1DAD7;    /*BORDA externa header*/
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 2px 4px 2px 14px; 
+	background: #CAE8EA url(../images/tblsort_bgheader.jpg) no-repeat;
+	vertical-align:top;
+}
+
+.tablesort th a{
+	text-decoration:none;
+	font: bold 12px/24px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align:top;
+	cursor:pointer;
+	background:transparent;
+}
+
+.tablesort th a:hover{
+	text-decoration:none;
+	font: bold 12px/24px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align:top;
+	cursor:pointer;
+	background:transparent;
+}
+
+.tablesort td.total{
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7; /*BORDA externa corpo*/
+	background: none;
+	text-align:left;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+		
+.tablesort th.sortable,
+.tablesort th.sortable-text,
+.tablesort th.sortable-date,
+.tablesort th.sortable-keep,
+.tablesort th.sortable-date-dmy,
+.tablesort th.sortable-numeric,
+.tablesort th.sortable-currency,
+.tablesort th.sortable-sortByTwelveHourTimestamp,
+.tablesort th.sortable-sortIPAddress,
+.tablesort th.sortable-sortEnglishLonghandDateFormat,
+.tablesort th.sortable-sortScientificNotation,
+.tablesort th.sortable-sortImage,
+.tablesort th.sortable-sortFileSize,
+.tablesort th.sortable-sortAlphaNumeric,
+.tablesort th.sortable-sortEnglishDateTime{
+	cursor:pointer;
+	background: #CAE8EA url(../images/tblsort_bgheader_sortable.jpg) no-repeat;
+	padding: 2px 4px 2px 14px; 
+	/* padding: 6px 12px 6px 12px; */
+}
+
+.tablesort th.forwardSort{ background:#CAE8EA url(../images/tblsort_bgheader_down.jpg) no-repeat 0 0; }
+.tablesort th.reverseSort{ background:#CAE8EA url(../images/tblsort_bgheader_up.jpg) no-repeat 0 0; }
+.tablesort thead th.forwardSort a,
+.tablesort thead th.reverseSort a{
+	color:#000;
+	text-decoration:none;
+}
+
+
+/* --------------------------------------------------------------- */
+
+.tablesort td a{
+	text-decoration:none;
+	color:#239;
+	background:transparent;
+}
+.tablesort td img{
+	margin:0 auto;
+	border:0px solid #ddd;
+}
+.tablesort td a:hover{
+	color:#000;/*#a84444;*/
+	border-bottom:0px dotted #a80000; /*Não exibir linha pontilha para <a link>*/
+	background:transparent;
+}
+.tablesort td{
+	font: normal 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	border-right:  0px solid #C1DAD7; /*BORDA interna corpo*/
+	border-bottom: 0px solid #C1DAD7; /*BORDA interna corpo*/
+	/* padding: 6px 12px 6px 12px; */
+	padding: 2px 3px 2px 3px;
+	color: #4f6b72;
+	vertical-align:top;
+}
+.tablesort td:first-child{ text-align:left; width:180px; }
+.tablesort td.lft{ text-align:left; }
+.tablesort tr.alt{ background: #F5FAFA; color: #797268; }
+
+/* Poor old Internet Explorer 6 has a bug that means we can't use background images for the table rows
+   as it trys to download the image each and every time that it is used (which means a 1000 row table
+   will produce 1000 http requests for the image in question) */
+.tablesort tr[class="alt"] td{ background: #F5FAFA url(../images/tblsort_td_alt.jpg) no-repeat; }
+.tablesort td[class~="alt"]  { background: #edf3f3 url(../images/tblsort_col_alt.jpg) no-repeat !important; }
+
+/* Poor old Internet Explorer won't see the next two rules either as it doesn't get :first-child */
+/* Neste projeto (metroUI a table
+.tablesort tbody tr.alt td:first-child { background: #F5FAFA url(../images/tblsort_bullet2.gif) no-repeat; font-weight:bold; }
+.tablesort tbody tr td:first-child     { background: #fff url(../images/tblsort_bullet1.gif) no-repeat;font-weight:bold; }
+*/
+
+/* Image free rules for Internet Explorer < 7 */
+* html .tablesort tr.alt td{ background-color:#F5FAFA; }
+* html .tablesort tr td.alt,
+* html .tablesort tr.alt td.alt{ background-color:#edf3f3; }
+
+/*******************************************************************************************************/
+/*                          ARQUIVO DE CLASSES DE ESTILO PARA TABLESORT - FIM   					   */
+/*******************************************************************************************************/
+
+
+/*******************************************************************************************************/
+/*                    CLASSES PARA TABLEHEADER - TABELA 'PAI' DAS PÁGINAS DETAIL [VIEW]                */
+/*******************************************************************************************************/
+.tableheader{
+	padding-top:12px;
+	border:1px solid #C6DBD6;
+	vertical-align:top;
+	width: 100%;
+	padding: 0;
+
+	border-collapse:collapse;
+	background-color:#E7EFF1;
+}
+
+.tableheader th{
+    font: bold 12px/24px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: left;
+    /* padding: 8px 12px 4px 12px; */
+	padding: 2px 4px 2px 0px; 
+	vertical-align:top;
+}
+
+.tableheader tr td{
+	font: normal 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    padding: 2px 3px 2px 3px;
+    color: #4f6b72;
+	vertical-align:bottom;
+	bottom:none;
+}
+
+.tableheader tr td:first-child{
+	width:180px;
+	font-weight:bold;
+	text-align:left;
+	background-color:#E7EFF1;
+	border:none;
+	/*background-image:none;*/
+}
+
+.tableheader tr:first-child td:first-child{
+	padding-top:12px;
+	/*background-image:none;*/
+}
+
+.tableheader tr#tableheader_last_row td{
+	vertical-align:top;
+	padding-bottom:12px;
+}
+/*******************************************************************************************************/
+/*              CLASSES PARA TABLEHEADER - TABELA 'PAI' DAS PÁGINAS DETAIL [VIEW] - FIM                */
+/*******************************************************************************************************/

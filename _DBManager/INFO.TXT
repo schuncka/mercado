@@ -1,0 +1,23 @@
+Exemplos de Strings de conexao:
+
+
+DRIVER
+------
+
+DRIVER={Microsoft Access Driver (*.mdb)};DBQ=D:\inetpub\wwwroot\temp\1ClickDBFree\dbtest.mdb;
+
+
+PROVIDER
+--------
+
+PROVIDER=Microsoft.Jet.OLEDB.4.0;DATA SOURCE=D:\inetpub\wwwroot\temp\1ClickDBFree\dbtest.mdb;
+
+
+DSN
+---
+
+DSN=bondma
+
+Username   = "bondma"
+DBPassword = "z7n4t3g8"
+

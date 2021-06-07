@@ -1,0 +1,193 @@
+TotalMenus = 7;
+
+// ----------------------------------------------------------------------------
+Menu1Items       = 5;
+Menu1Width       = 95; //largura de cada item do menu
+Menu1Height      = 12; //altura de cada item do menu
+Menu1Base        = 6;  //posição inicial da opções do menu
+Menu1Title       = "SISTEMA";
+
+Menu1Item1       = "PAINEL";
+Menu1Item1Action = "SwitchItems";
+Menu1Item1Data   = "principal.asp,fr_principal";
+
+Menu1Item2       = "USUÁRIOS";
+Menu1Item2Action = "SwitchItems";
+Menu1Item2Data   = "usuario/DEFAULT.ASP,fr_principal";
+
+Menu1Item3       = "GEN. DB";
+Menu1Item3Action = "SwitchItems";
+Menu1Item3Data   = "_DBManager/athDefault.asp,fr_principal";
+
+Menu1Item4       = "GEN. ARQUIVO";
+Menu1Item4Action = "SwitchItems";
+Menu1Item4Data   = "FileManager.asp,fr_principal";
+
+Menu1Item5       = "LOGOUT";
+Menu1Item5Action = "SwitchItems";
+Menu1Item5Data   = "logout.asp,fr_principal";
+
+// ----------------------------------------------------------------------------
+
+Menu2Items       = 5;
+Menu2Width       = 103;
+Menu2Title       = "CADASTROS";
+
+Menu2Item1       = "PALESTRANTES";
+Menu2Item1Action = "SwitchItems";
+Menu2Item1Data   = "palestrante/DEFAULT.ASP,fr_principal";
+
+Menu2Item2       = "ATIVIDADES";
+Menu2Item2Action = "SwitchItems";
+Menu2Item2Data   = "atividades/DEFAULT.ASP,fr_principal";
+
+Menu2Item3       = "PRODUTOS";
+Menu2Item3Action = "SwitchItems";
+Menu2Item3Data   = "adm_produto/DEFAULT.ASP,fr_principal";
+
+Menu2Item4       = "CATEGORIA";
+Menu2Item4Action = "SwitchItems";
+Menu2Item4Data   = "categoriasprecos/DEFAULT.ASP,fr_principal";
+
+Menu2Item5       = "TIPO CREDENCIAL";
+Menu2Item5Action = "SwitchItems";
+Menu2Item5Data   = "tiposcredenciais/DEFAULT.ASP,fr_principal";
+
+// ----------------------------------------------------------------------------
+
+Menu3Items       = 5;
+Menu3Width       = 103;
+Menu3Title       = "VISITANTES";
+
+Menu3Item1       = "EMPRESAS";
+Menu3Item1Action = "SwitchItems";
+Menu3Item1Data   = "VisitanteEmpresas/DEFAULT.ASP,fr_principal";
+
+Menu3Item2       = "CONTATOS";
+Menu3Item2Action = "SwitchItems";
+Menu3Item2Data   = "VisitanteContatos/DEFAULT.ASP,fr_principal";
+
+Menu3Item3       = "CARGOS";
+Menu3Item3Action = "SwitchItems";
+Menu3Item3Data   = "cargos/DEFAULT.ASP,fr_principal";
+
+Menu3Item4       = "LOTES";
+Menu3Item4Action = "SwitchItems";
+Menu3Item4Data   = "lote/default.asp,fr_principal";
+
+Menu3Item5       = "RELATÓRIOS";
+Menu3Item5Action = "SwitchItems";
+Menu3Item5Data   = "loterelatorio/default.asp,fr_principal";
+// ----------------------------------------------------------------------------
+
+Menu4Items       = 4;
+Menu4Width       = 103;
+Menu4Title       = "CREDENCIAL";
+
+Menu4Item1       = "BUSCA";
+Menu4Item1Action = "SwitchItems";
+Menu4Item1Data   = "credencial/credencial.asp,fr_principal";
+
+Menu4Item2       = "INS P.FÍSICA";
+Menu4Item2Action = "SwitchItems";
+Menu4Item2Data   = "credencial/ins_basica_pf.asp,fr_principal";
+
+Menu4Item3       = "INS P.JURÍDICA";
+Menu4Item3Action = "SwitchItems";
+Menu4Item3Data   = "credencial/ins_basica.asp,fr_principal";
+
+Menu4Item4       = "EXPRESSA";
+Menu4Item4Action = "SwitchItems";
+Menu4Item4Data   = "credfast/credencial.asp,fr_principal";
+
+// ----------------------------------------------------------------------------
+
+Menu5Items       = 5;
+Menu5Width       = 103;
+Menu5Title       = "MANUTENÇÃO";
+
+Menu5Item1       = "BUSCA";
+Menu5Item1Action = "SwitchItems";
+Menu5Item1Data   = "manutencao/manutencao.asp?var_tpbusca=MANUT,fr_principal";
+
+Menu5Item2       = "INS P.FÍSICA";
+Menu5Item2Action = "SwitchItems";
+Menu5Item2Data   = "manutencao/ins_completa_pf.asp,fr_principal";
+
+Menu5Item3       = "INS P.JURÍDICA";
+Menu5Item3Action = "SwitchItems";
+Menu5Item3Data   = "manutencao/ins_completa.asp,fr_principal";
+
+Menu5Item4       = "RELATÓRIOS";
+Menu5Item4Action = "SwitchItems";
+Menu5Item4Data   = "estatistica/relatorio.asp,fr_principal";
+
+Menu5Item5       = "ATESTADO";
+Menu5Item5Action = "SwitchItems";
+Menu5Item5Data   = "certificado/atestado.asp,fr_principal";
+
+// ----------------------------------------------------------------------------
+
+Menu6Items       = 6;
+Menu6Width       = 103;
+Menu6Title       = "CONGRESSO";
+
+Menu6Item1       = "CAIXA";
+Menu6Item1Action = "SwitchItems";
+Menu6Item1Data   = "caixa/caixa.asp,fr_principal";
+
+Menu6Item2       = "ADMINISTRAÇÃO";
+Menu6Item2Action = "SwitchItems";
+Menu6Item2Data   = "caixaadm/administracao.asp,fr_principal";
+
+Menu6Item3       = "RETIRADA";
+Menu6Item3Action = "SwitchItems";
+Menu6Item3Data   = "material/material.asp,fr_principal";
+
+Menu6Item4       = "DEVOLUÇÂO";
+Menu6Item4Action = "SwitchItems";
+Menu6Item4Data   = "devolucaomaterial/default.asp,fr_principal";
+
+Menu6Item5       = "RELATÓRIOS";
+Menu6Item5Action = "SwitchItems";
+Menu6Item5Data   = "relatorio/relatorio.asp,fr_principal";
+
+Menu6Item6       = "CERTIFICADO";
+Menu6Item6Action = "SwitchItems";
+Menu6Item6Data   = "certificado/certificado.asp,fr_principal";
+
+// ----------------------------------------------------------------------------
+
+Menu7Items       = 4;
+Menu7Width       = 103;
+Menu7Title       = "CONCURSO";
+
+Menu7Item1       = "JURADOS";
+Menu7Item1Action = "SwitchItems";
+Menu7Item1Data   = "concurso/jurado/default.asp,fr_principal";
+
+Menu7Item2       = "QUESITOS";
+Menu7Item2Action = "SwitchItems";
+Menu7Item2Data   = "concurso/quesito/default.asp,fr_principal";
+
+Menu7Item3       = "CAMPEONATO";
+Menu7Item3Action = "SwitchItems";
+Menu7Item3Data   = "concurso/campeonato/default.asp,fr_principal";
+
+Menu7Item4       = "APURAÇÃO";
+Menu7Item4Action = "SwitchItems";
+Menu7Item4Data   = "concurso/apuracao/default.asp,fr_principal";
+
+// ----------------------------------------------------------------------------
+
+//Menu8Items       = 2;
+//Menu8Width       = 103;
+//Menu8Title       = "SOBRE";
+
+//Menu8Item1       = "MANUAL";
+//Menu8Item1Action = "SwitchItems";
+//Menu8Item1Data   = "manual/default.asp,fr_principal";
+
+//Menu8Item2       = "CRÉDITOS";
+//Menu8Item2Action = "SwitchItems";
+//Menu8Item2Data   = "creditos/default.asp,fr_principal";

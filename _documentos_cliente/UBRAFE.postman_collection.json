@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "2086f3e8-318d-4b2b-94e7-b2ce7812c5dc",
+		"name": "UBRAFE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BUSCA EVENTOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tradeunion.proevento.com.br/ubrafe/getdata/BuscaEventosJson.php?var_ano=2020",
+					"protocol": "https",
+					"host": [
+						"tradeunion",
+						"proevento",
+						"com",
+						"br"
+					],
+					"path": [
+						"ubrafe",
+						"getdata",
+						"BuscaEventosJson.php"
+					],
+					"query": [
+						{
+							"key": "var_ano",
+							"value": "2020"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCA DADOS EVENTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tradeunion.proevento.com.br/ubrafe/getdata/BuscaDadosEventoJson.php?var_cod_evento=2449",
+					"protocol": "https",
+					"host": [
+						"tradeunion",
+						"proevento",
+						"com",
+						"br"
+					],
+					"path": [
+						"ubrafe",
+						"getdata",
+						"BuscaDadosEventoJson.php"
+					],
+					"query": [
+						{
+							"key": "var_cod_evento",
+							"value": "2449"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCA CIDADES EVENTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tradeunion.proevento.com.br/ubrafe/getdata/BuscaCidadesJson.php",
+					"protocol": "https",
+					"host": [
+						"tradeunion",
+						"proevento",
+						"com",
+						"br"
+					],
+					"path": [
+						"ubrafe",
+						"getdata",
+						"BuscaCidadesJson.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCA ASSOCIADOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tradeunion.proevento.com.br/ubrafe/getdata/BuscaAssociadosJson.php",
+					"protocol": "https",
+					"host": [
+						"tradeunion",
+						"proevento",
+						"com",
+						"br"
+					],
+					"path": [
+						"ubrafe",
+						"getdata",
+						"BuscaAssociadosJson.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCA SETORES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tradeunion.proevento.com.br/ubrafe/getdata/BuscaSetoresJson.php",
+					"protocol": "https",
+					"host": [
+						"tradeunion",
+						"proevento",
+						"com",
+						"br"
+					],
+					"path": [
+						"ubrafe",
+						"getdata",
+						"BuscaSetoresJson.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
