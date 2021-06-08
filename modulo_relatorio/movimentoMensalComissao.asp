@@ -86,22 +86,19 @@ End Function
     <td colspan="2" align="center" class="arial10">&nbsp;</td>
   </tr>
   <tr> 
-    <td colspan="2" align="center" class="arial12Bold">RP01 - Budget 
-      <%
-	  If strDT_INICIO <> "" And strDT_INICIO <> "" Then
-	    'Response.Write("<br>Perï¿½odo: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
-	  Else
-	    'Response.Write("<br>Perï¿½odo: Completo")
-	  End If
+    <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
+      <%	  
+	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
+	  
 	  %> </td>
   </tr>
-  <!--tr> 
+  <tr> 
     <td width="299" class="arial12Bold">&nbsp;</td>
     <td align="right" class="arial12Bold">
       <a href="rel_budget_excel.asp?var_banco=<%=strBANCO%>&var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=<%=Request("order")%>&direction=<%=Request("direction")%>" class="Tahomacinza9"><img src="../img/ico_excel_mini.gif" width="16" height="16" hspace="1" border="0">excel</a>&nbsp;&nbsp; 
       <a href="javascript:window.print();" class="Tahomacinza9"><img src="../img/ico_impressora_mini.gif" border="0">imprimir</a>
     </td>
-  </tr//-->
+  </tr>
 </table>
 <table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#FFFFFF" class="arial12">
   <tr align='left'> 
@@ -198,55 +195,48 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO; "
 
    i = 0
    j = 0
-   strBgColor = "#FFE8B7"
    
-   strVLR_PREVISTO  = 0
-   strVLR_REALIZADO = 0
-   strVLR_REALIZADO_ANTERIOR = 0
-   strVLR_ECONOMIA = 0
-
-   strSUB_VLR_PREVISTO  = 0
-   strSUB_VLR_REALIZADO = 0
-   strSUB_VLR_REALIZADO_ANTERIOR = 0
-   strSUB_VLR_ECONOMIA = 0
-   
-   strTOT_VLR_PREVISTO  = 0
-   strTOT_VLR_REALIZADO = 0
-   strTOT_VLR_REALIZADO_ANTERIOR = 0
-   strTOT_VLR_ECONOMIA = 0
+   bgColor = "#DCDCDC"
+  
 
    If not objRS.BOF Then
 		strGRUPO = "BOF"
    End If
    Do While Not objRS.EOF   
-		vlrComissaoC = 0
+		    vlrComissaoC = 0
         vlrComissaoV = 0
 
         if objRS("comissaoc") <> "" Then
 
         end if
+
+        if bgColor = "#DCDCDC" then
+            bgColor = "#F5FFFA"
+        else
+            bgColor = "#DCDCDC"
+        end if
  %>
  <tr align='left'> 
-    <td width="103" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("data")&""%></td>
-    <td bgcolor="#FFCC66" class="arial12Bold"><%=objRS("contrato")&""%></td>    
-    <td width="103" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("comprador")&""%></td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("vendedor")&""%></td>        
-	<td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("repre")&""%></td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("produto")&""%></td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("quantidade")&""%></td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("preco")&""%></td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><%=objRS("vlrTotal")&""%></b>
+    <td width="103" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("data")&""%></td>
+    <td bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("contrato")&""%></td>    
+    <td width="103" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("comprador")&""%></td>
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("vendedor")&""%></td>        
+	  <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("repre")&""%></td>
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("produto")&""%></td>
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("quantidade")&""%></td>
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("preco")&""%></td>
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("vlrTotal")&""%></b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	% COMIS V/C</b>
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
+    	% vlrComissaoC / vlrComissaov</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
     	Participação</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
     	Total Participação</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
     	Mercado</b>
     </td>
   </tr>
