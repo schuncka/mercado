@@ -249,6 +249,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 	'End If
 
  	 i = i + 1
+      objRS.move_next
 	 If i mod 50 = 0 Then
 	   Response.Flush()
 	 End If
