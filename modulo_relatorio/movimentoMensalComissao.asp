@@ -185,7 +185,7 @@ strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tVendedor ON (TBL_CONTRATO.IDEMPR
 strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tRepre ON (TBL_CONTRATO.IDREPRE = tRepre.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tRepre.IDEMPRESA))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_PRODUTOS ON (TBL_CONTRATO.IDEMPRESA = TBL_PRODUTOS.IDEMPRESA) AND (TBL_CONTRATO.Produto = TBL_PRODUTOS.IDPROD) "
 strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_INICIO, False, False) & "' And '" & PrepDataIve(strDT_FIM, False, False) & "') AND ((tRepre.NomeDoCliente) Is Not Null)) "
-strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO; "
+strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 
 
    Response.Write(strSQL)
