@@ -89,7 +89,7 @@ End Function
   <tr> 
     <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
       <%	  
-	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
+	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))
 	  
 	  %> </td>
   </tr>
