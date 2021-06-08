@@ -102,7 +102,7 @@ End Function
 </table>
 <table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#FFFFFF" class="arial12">
   <tr align='left'> 
-    <td width="103" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b>
+    <td  bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b>
 		<!--a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=COD_REDUZIDO&direction=ASC"><img src="../_DBManager/gridlnkASC.gif" width="11" height="11" border="0" align="absmiddle"></a>
 		<a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=COD_REDUZIDO&direction=DESC"><img src="../_DBManager/gridlnkDESC.gif" width="11" height="11" border="0" align="absmiddle"></a-->
         Data</b>
@@ -114,41 +114,41 @@ End Function
         Contrato</b>
     </td>
     
-    <td width="103" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b>
+    <td  bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b>
 		<!--a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=RESUMIDO&direction=ASC"><img src="../_DBManager/gridlnkASC.gif" width="11" height="11" border="0" align="absmiddle"></a>
 		<a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=RESUMIDO&direction=DESC"><img src="../_DBManager/gridlnkDESC.gif" width="11" height="11" border="0" align="absmiddle"></a-->
         Comprador</b>
     </td>
 
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Vendedor</b>
     </td>
         
-	<td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+	<td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Representante</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Produto</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Quantidade</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Preço</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Valor Operação</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	% COMIS V/C</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Participação</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Total Participação</b>
     </td>
-    <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Mercado</b>
     </td>
   </tr>
@@ -217,27 +217,27 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
         end if
  %>
  <tr align='left'> 
-    <td width="103" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("data")&""%></td>
-    <td bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("contrato")&""%></td>    
-    <td width="103" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("comprador")&""%></td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("vendedor")&""%></td>        
-	  <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("repre")&""%></td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("produto")&""%></td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("quantidade")&""%></td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("preco")&""%></td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><%=objRS("vlrTotal")&""%></b>
+    <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("data")&""%></td>
+    <td bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
+    <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
+	  <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("quantidade")&""%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("preco")&""%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vlrTotal")&""%></b>
     </td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	% vlrComissaoC / vlrComissaov</b>
     </td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
-    	Participação</b>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    	0,00</b>
     </td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
-    	Total Participação</b>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    	0,00</b>
     </td>
-    <td width="69" align="center" bgcolor="<%=bgColor%>" class="arial12Bold"><b>		
-    	Mercado</b>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    	0,00</b>
     </td>
   </tr>
 
