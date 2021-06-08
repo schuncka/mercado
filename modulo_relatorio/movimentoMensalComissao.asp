@@ -14,7 +14,7 @@
  
 
  
-  Dim objConn, ObjRS
+Dim objConn, ObjRS
  Dim strSQL, strSQLClause, auxstr, MyChecked
  Dim auxTimeInic, auxTimeFim
  Dim strBgColor, i, j, cont
@@ -34,7 +34,7 @@
    
 
 Function HasTimeInside(DateToEvaluate)
-   ' Declaração para variáveis para dois métodos
+   ' Declaraï¿½ï¿½o para variï¿½veis para dois mï¿½todos
    Dim strHora
    Dim strMinuto
    Dim strSegundo
@@ -89,9 +89,9 @@ End Function
     <td colspan="2" align="center" class="arial12Bold">RP01 - Budget 
       <%
 	  If strDT_INICIO <> "" And strDT_INICIO <> "" Then
-	    'Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
+	    'Response.Write("<br>Perï¿½odo: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
 	  Else
-	    'Response.Write("<br>Período: Completo")
+	    'Response.Write("<br>Perï¿½odo: Completo")
 	  End If
 	  %> </td>
   </tr>
@@ -137,19 +137,19 @@ End Function
     	Quantidade</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Preço</b>
+    	Preï¿½o</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Valor Operação</b>
+    	Valor Operaï¿½ï¿½o</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	% COMIS V/C</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Participação</b>
+    	Participaï¿½ï¿½o</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Total Participação</b>
+    	Total Participaï¿½ï¿½o</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Mercado</b>
@@ -173,7 +173,7 @@ strSQL = strSQL & " , TBL_CONTRATO.ComissaoV "
 strSQL = strSQL & " , TBL_CONTRATO.Comissaoc "
 strSQL = strSQL & " , TBL_CONTRATO.preco * TBL_CONTRATO.quantidade AS vlrTotal "
 strSQL = strSQL & " /*, calcComissaoRepre([tbl_contrato]![IDREPRE],IIf(IsNull([ComissaoV]),0,[ComissaoV]),IIf(IsNull([PRECO]),0,[PRECO]),IIf(IsNull([Quantidade]),0,[quantidade]),IIf(IsNull([comissao]),0,[comissao]),IIf(IsNull([comissaoc]),0,[comissaoc])) AS COMISSAO_REPRESENTANTE "
-strSQL = strSQL & " , IIf(IsNull([COMISSAO]),0,[COMISSAO])*100 AS Comissão "
+strSQL = strSQL & " , IIf(IsNull([COMISSAO]),0,[COMISSAO])*100 AS Comissï¿½o "
 strSQL = strSQL & " , ((IIf(IsNull([preco]),0,[preco]))*IIf(IsNull([quantidade]),0,[quantidade]))*(IIf(IsNull([comissaov]),0,[comissaov])+IIf(IsNull([comissaoc]),0,[comissaoc])) AS Resultado "
 strSQL = strSQL & " , calcComissaoMercado([tbl_contrato]![idrepre],IIf(IsNull([tbl_contrato]![preco]),0,[tbl_contrato]![preco]),IIf(IsNull([tbl_contrato]![quantidade]),0,[tbl_contrato]![quantidade]),IIf(IsNull([tbl_contrato]![comissaov]),0,[tbl_contrato]![comissaov]),IIf(IsNull([tbl_contrato]![comissaoc]),0,[tbl_contrato]![comissaoc]),IIf(IsNull([tbl_contrato]![comissao]),0,[tbl_contrato]![comissao])) AS COMISSAO_MERCADO "
 strSQL = strSQL & " */ "
@@ -256,7 +256,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO; "
 	   strSUB_VLR_REALIZADO = 0
 	   strSUB_VLR_REALIZADO_ANTERIOR = 0
 	   strSUB_VLR_ECONOMIA = 0
-	End If
+	'End If
 
  	 i = i + 1
 	 If i mod 50 = 0 Then
