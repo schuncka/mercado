@@ -30,6 +30,7 @@
 
  strDT_INICIO = Replace(Request("var_dt_inicio"),"'","")
  strDT_FIM = Replace(Request("var_dt_fim"),"'","")
+ strIdRepre = Replace(Request("DBVAR_STR_IDREPRE"),"'","")
   
    
 
@@ -153,8 +154,8 @@ End Function
  
  
 
-strDT_INICIO = "01/01/2018"
-strDT_FIM = "31/12/2018"
+'strDT_INICIO = "01/01/2018"
+'strDT_FIM = "31/12/2018"
 
 strSQL = strSQL & " SELECT DISTINCT "
 strSQL = strSQL & "  TBL_CONTRATO.Data, tbl_contrato.idcontrato "
@@ -181,7 +182,10 @@ strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tVendedor ON (TBL_CONTRATO.IDEMPR
 strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tRepre ON (TBL_CONTRATO.IDREPRE = tRepre.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tRepre.IDEMPRESA))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_PRODUTOS ON (TBL_CONTRATO.IDEMPRESA = TBL_PRODUTOS.IDEMPRESA) AND (TBL_CONTRATO.Produto = TBL_PRODUTOS.IDPROD) "
 strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_INICIO, False, False) & "' And '" & PrepDataIve(strDT_FIM, False, False) & "') AND ((tRepre.NomeDoCliente) Is Not Null)) "
-strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
+if strIdRepre <> "" then
+  strSQL = strSQL = " and tbl_contrato.idrepre = " & strIdRepre
+end if
+strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
 
 
   
