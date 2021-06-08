@@ -187,7 +187,7 @@ if strIdRepre <> "" then
 end if
 strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
 
-
+response.write strSQL
   
 
    set objRS = objConn.Execute(strSQL)  
