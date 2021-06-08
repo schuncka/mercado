@@ -78,7 +78,7 @@ End Function
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" href="../_css/csm.css">
-<title><%=Session("NOME_EVENTO")%>  - Movimento Mensal</title>
+<title>Movimento Mensal</title>
 </head>
 <body text="#916E28" link="#916E28" vlink="#916E28" alink="#916E28" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -88,7 +88,7 @@ End Function
   <tr> 
     <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
       <%	  
-	    Response.Write("<br>Perï¿½odo: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
+	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
 	  
 	  %> </td>
   </tr>
