@@ -23,7 +23,7 @@ Dim objConn, ObjRS
  Dim strVLR_PREVISTO, strVLR_REALIZADO, strVLR_REALIZADO_ANTERIOR, strVLR_ECONOMIA
  Dim strSUB_VLR_PREVISTO, strSUB_VLR_REALIZADO, strSUB_VLR_REALIZADO_ANTERIOR, strSUB_VLR_ECONOMIA
  Dim strTOT_VLR_PREVISTO, strTOT_VLR_REALIZADO, strTOT_VLR_REALIZADO_ANTERIOR, strTOT_VLR_ECONOMIA
- Dim strORDERBY, strDIRECTION
+ Dim strORDERBY, strDIRECTION, vlrComissaoC
   
  
    AbreDBConn objConn, CFG_DB_DADOS 
@@ -137,19 +137,19 @@ End Function
     	Quantidade</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Preï¿½o</b>
+    	Preço</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Valor Operaï¿½ï¿½o</b>
+    	Valor Operação</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	% COMIS V/C</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Participaï¿½ï¿½o</b>
+    	Participação</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
-    	Total Participaï¿½ï¿½o</b>
+    	Total Participação</b>
     </td>
     <td width="69" align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Mercado</b>
