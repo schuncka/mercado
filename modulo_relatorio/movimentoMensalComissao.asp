@@ -224,7 +224,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
         end if
  %>
  <tr align='left'> 
-    <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",9)%></td>
+    <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",8)%></td>
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
@@ -264,7 +264,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 ' end if
 %>
   <tr align='left'> 
-    <td colspan="10" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
+    <td colspan="9" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO_ANTERIOR)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_PREVISTO)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO)%></b></td>
