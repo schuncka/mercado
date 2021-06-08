@@ -23,7 +23,7 @@ Dim objConn, ObjRS
  Dim strVLR_PREVISTO, strVLR_REALIZADO, strVLR_REALIZADO_ANTERIOR, strVLR_ECONOMIA
  Dim strSUB_VLR_PREVISTO, strSUB_VLR_REALIZADO, strSUB_VLR_REALIZADO_ANTERIOR, strSUB_VLR_ECONOMIA
  Dim strTOT_VLR_PREVISTO, strTOT_VLR_REALIZADO, strTOT_VLR_REALIZADO_ANTERIOR, strTOT_VLR_ECONOMIA
- Dim strORDERBY, strDIRECTION, vlrComissaoC,vlrComissaoV
+ Dim strORDERBY, strDIRECTION, vlrComissaoC,vlrComissaoV, bgColor
   
  
    AbreDBConn objConn, CFG_DB_DADOS 
@@ -34,7 +34,7 @@ Dim objConn, ObjRS
    
 
 Function HasTimeInside(DateToEvaluate)
-   ' Declara��o para vari�veis para dois m�todos
+   
    Dim strHora
    Dim strMinuto
    Dim strSegundo
@@ -188,7 +188,7 @@ strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_I
 strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 
 
-   Response.Write(strSQL)
+   'Response.Write(strSQL)
    'Response.End()
 
    set objRS = objConn.Execute(strSQL)  
