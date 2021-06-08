@@ -206,7 +206,15 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
         vlrComissaoV = 0
 
         if objRS("comissaoc") <> "" Then
+            vlrComissaoC = objRS("comissaoc")
+        else 
+            vlrComissaoC = 0
+        end if
 
+        if objRS("comissaov") <> "" Then
+            vlrComissaoV = objRS("comissaov")
+        else 
+            vlrComissaoV = 0
         end if
 
         if bgColor = "#DCDCDC" then
@@ -227,7 +235,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("vlrTotal"),2)%></b>
     </td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormataDouble(objRS("ComissaoV"),2)%> / <%=FormataDouble(objRS("ComissaoC"),2)%></b>
+    	<%=FormataDouble(vlrComissaoV,2)%> / <%=FormataDouble(vlrComissaoC,2)%></b>
     </td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
