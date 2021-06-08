@@ -120,35 +120,35 @@ End Function
         Comprador</b>
     </td>
 
-    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Vendedor</b>
     </td>
         
-	<td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
+	<td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Representante</b>
     </td>
-    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Produto</b>
     </td>
-    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Quantidade</b>
     </td>
-    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Preço</b>
     </td>
-    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Valor Operação</b>
     </td>
-    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	% COMIS V/C</b>
     </td>
-    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Participação</b>
     </td>
-    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Total Participação</b>
     </td>
-    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Mercado</b>
     </td>
   </tr>
@@ -230,12 +230,12 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
 	  <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("quantidade"),2)%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("preco"),2)%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("vlrTotal"),2)%></b>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("quantidade"))%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("preco"))%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("vlrTotal"))%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormataDouble(vlrComissaoV,2)%> / <%=FormataDouble(vlrComissaoC,2)%></b>
+    	<%=FormatNumber(vlrComissaoV)%> / <%=FormatNumber(vlrComissaoC)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
