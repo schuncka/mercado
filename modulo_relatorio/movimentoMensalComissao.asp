@@ -222,12 +222,12 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
 	  <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("quantidade")&"",2)%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("preco")&"",2)%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("vlrTotal")&"",2)%></b>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("quantidade"),2)%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("preco"),2)%></td>
+    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("vlrTotal"),2)%></b>
     </td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormataDouble(objRS("ComissaoV")&"",2)%> / <%=FormataDouble(objRS("ComissaoC")&"",2)%></b>
+    	<%=FormataDouble(objRS("ComissaoV"),2)%> / <%=FormataDouble(objRS("ComissaoC"),2)%></b>
     </td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
