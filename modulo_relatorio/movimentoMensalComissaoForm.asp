@@ -1,14 +1,14 @@
-<!--#include file="../../_database/athdbConnCS.asp"-->
-<!--#include file="../../_database/athUtilsCS.asp"-->  
+<!--#include file="../_database/athdbConnCS.asp"-->
+<!--#include file="../_database/athUtilsCS.asp"-->  
 <% 'ATENÇÃO: doctype, language, option explicit, etc... estão no athDBConn %> 
-<% VerificaDireito "|INS|", BuscaDireitosFromDB("modulo_clientes",Session("METRO_USER_ID_USER")), true %>
+<% 'VerificaDireito "|INS|", BuscaDireitosFromDB("modulo_clientes",Session("METRO_USER_ID_USER")), true %>
 <%
 
  Const MDL = "DEFAULT"          											' - Default do Modulo...
  Const LTB = "tbl_clientes_sub"							    		' - Nome da Tabela...
  Const DKN = "cod_tbl_clientes_sub"										      	  		' - Campo chave...
  Const DLD = "../modulo_clientes/mini_Contatos/default.asp" 	' "../evento/data.asp" - 'Default Location após Deleção
- Const TIT = "Contatos"													' - Nome/Titulo sendo referencia como titulo do módulo no botão de filtro
+ Const TIT = "Relatório Comissão"													' - Nome/Titulo sendo referencia como titulo do módulo no botão de filtro
 
  'Relativas a conexão com DB, RecordSet e SQL
  Dim objConn, objRS, strSQL, strSQL2
@@ -34,9 +34,9 @@ strCodCli 		= Replace(GetParam("var_chavereg"),"'","''")
 <html>
 <head>
 <title>Mercado</title>
-<!--#include file="../../_metroui/meta_css_js.inc"--> 
-<!--#include file="../../_metroui/meta_css_js_forhelps.inc"--> 
-<script src="../../_scripts/scriptsCS.js"></script>
+<!--#include file="../_metroui/meta_css_js.inc"--> 
+<!--#include file="../_metroui/meta_css_js_forhelps.inc"--> 
+<script src="../_scripts/scriptsCS.js"></script>
 <script language="javascript" type="text/javascript">
 <!-- 
 /* INI: OK, APLICAR e CANCELAR, funções para action dos botões ---------
@@ -45,23 +45,12 @@ de abertura de janela "POPUP", "NORMAL" e com este tratamento abaixo os
 botões estão aptos a retornar para default location´s
 corretos em cada opção de janela -------------------------------------- */
 function ok() { 
- <% if (CFG_WINDOW = "NORMAL") then 
-  		response.write ("document.formupdate.DEFAULT_LOCATION.value='../modulo_clientes/mini_Contatos/default.asp';") 
-	 else
-  		response.write ("document.forminsert.DEFAULT_LOCATION.value='../_database/athWindowClose.asp';")  
-  	 end if
- %> 
+ 
 	if (validateRequestedFields("forminsert")) { 
 		document.forminsert.submit(); 
 	} 
 }
-function aplicar()      {  
-  document.forminsert.DEFAULT_LOCATION.value="../modulo_clientes/mini_Contatos/insert.asp?var_chavereg=<%=strCodCli%>"; 
-  if (validateRequestedFields("forminsert")) { 
-	$.Notify({style: {background: 'green', color: 'white'}, content: "Enviando dados..."});
-  	document.forminsert.submit(); 
-  }
-}
+
 function cancelar() { 
  <% if (CFG_WINDOW = "NORMAL") then 
   		response.write ("window.history.back()")
@@ -76,7 +65,7 @@ function cancelar() {
 <body class="metro" id="metrotablevista" >
 <!-- INI: BARRA que contem o título do módulo e ação da dialog //-->
 <div class="bg-darkEmerald fg-white" style="width:100%; height:50px; font-size:20px; padding:10px 0px 0px 10px;">
-   <%=TIT%>&nbsp;<sup><span style="font-size:12px">INSERT</span></sup>
+   <%=TIT%>&nbsp;<sup><span style="font-size:12px"></span></sup>
 </div>
 <!-- FIM:BARRA ----------------------------------------------- //-->
 <div class="container padding20">
@@ -138,8 +127,7 @@ function cancelar() {
   <div style="padding-top:16px;"><!--INI: BOTÕES/MENSAGENS//-->
         <div style="float:left">
             <input  class="primary" type="button"  value="OK"      onClick="javascript:ok();return false;">
-            <input  class=""        type="button"  value="CANCEL"  onClick="javascript:cancelar();return false;">                   
-            <input  class=""        type="button"  value="APLICAR" onClick="javascript:aplicar();return false;">                   
+            <input  class=""        type="button"  value="CANCEL"  onClick="javascript:cancelar();return false;">                               
         </div>
         <div style="float:right">
 	        <small class="text-left fg-teal" style="float:right"> <strong>(borda azul) e/ou (*)</strong> campos obrigatórios</small>
