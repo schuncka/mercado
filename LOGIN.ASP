@@ -68,14 +68,14 @@
 			<% 'end if %>
 
             <p class="description" id="_general">
-                teste
+                
             </p>
             <h3 id="_heading"><i class="icon-accessibility on-left"></i>CORRETORA MERCADO</h2>
             
             <div class="description">
 				<%
                  if getParam("erro")="" then 
-                   response.write ("<p class='text-muted'>Bem-vindo ao sistema de gestï¿½o da ")
+                   response.write ("<p class='text-muted'>Bem-vindo ao sistema de gestão da ")
                    response.write ("<br>" & arrSdesc(ArrayIndexOf(arrScodi,"CLIENTE")) & "&nbsp;<small>(" & CFG_DB & ")</small><br></p>")
                  else
                    response.write "<p class='text-alert'><strong>ERRO</strong>:&nbsp;<small>" & Request.Form("erro") & "</small></p>"
@@ -89,7 +89,7 @@
                            
                             <!-- label>Usuï¿½rio</label //-->
                             <div class="input-control text" data-role="input-control">
-                                <input type="text" name="var_userid" id="var_userid" placeholder="usuï¿½rio">
+                                <input type="text" name="var_userid" id="var_userid" placeholder="usuário">
                                 <button class="btn-clear" tabindex="-1"></button>
                             </div>
                             <!-- label>Senha</label //-->
