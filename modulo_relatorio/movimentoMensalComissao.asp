@@ -170,7 +170,7 @@ strSQL = strSQL & " , TBL_CONTRATO.ComissaoV "
 strSQL = strSQL & " , TBL_CONTRATO.Comissaoc "
 strSQL = strSQL & " , TBL_CONTRATO.preco * TBL_CONTRATO.quantidade AS vlrTotal "
 strSQL = strSQL & " /*, calcComissaoRepre([tbl_contrato]![IDREPRE],IIf(IsNull([ComissaoV]),0,[ComissaoV]),IIf(IsNull([PRECO]),0,[PRECO]),IIf(IsNull([Quantidade]),0,[quantidade]),IIf(IsNull([comissao]),0,[comissao]),IIf(IsNull([comissaoc]),0,[comissaoc])) AS COMISSAO_REPRESENTANTE "
-strSQL = strSQL & " , IIf(IsNull([COMISSAO]),0,[COMISSAO])*100 AS Comiss�o "
+strSQL = strSQL & " , IIf(IsNull([COMISSAO]),0,[COMISSAO])*100 AS Comissao "
 strSQL = strSQL & " , ((IIf(IsNull([preco]),0,[preco]))*IIf(IsNull([quantidade]),0,[quantidade]))*(IIf(IsNull([comissaov]),0,[comissaov])+IIf(IsNull([comissaoc]),0,[comissaoc])) AS Resultado "
 strSQL = strSQL & " , calcComissaoMercado([tbl_contrato]![idrepre],IIf(IsNull([tbl_contrato]![preco]),0,[tbl_contrato]![preco]),IIf(IsNull([tbl_contrato]![quantidade]),0,[tbl_contrato]![quantidade]),IIf(IsNull([tbl_contrato]![comissaov]),0,[tbl_contrato]![comissaov]),IIf(IsNull([tbl_contrato]![comissaoc]),0,[tbl_contrato]![comissaoc]),IIf(IsNull([tbl_contrato]![comissao]),0,[tbl_contrato]![comissao])) AS COMISSAO_MERCADO "
 strSQL = strSQL & " */ "
@@ -188,8 +188,7 @@ strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_I
 strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 
 
-   'Response.Write(strSQL)
-   'Response.End()
+  
 
    set objRS = objConn.Execute(strSQL)  
 
@@ -228,7 +227,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vlrTotal")&""%></b>
     </td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	% vlrComissaoC / vlrComissaov</b>
+    	<%=objRS("ComissaoV")&""%> / <%=objRS("ComissaoC")&""%></b>
     </td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
@@ -242,15 +241,12 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
   </tr>
 
 <%
-	   strSUB_VLR_PREVISTO  = 0
-	   strSUB_VLR_REALIZADO = 0
-	   strSUB_VLR_REALIZADO_ANTERIOR = 0
-	   strSUB_VLR_ECONOMIA = 0
+	   
 	'End If
 
  	 i = i + 1
       objRS.movenext
-	 If i mod 50 = 0 Then
+	 If i mod 10 = 0 Then
 	   Response.Flush()
 	 End If
    Loop
@@ -260,7 +256,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 ' end if
 %>
   <tr align='left'> 
-    <td colspan="3" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
+    <td colspan="10" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO_ANTERIOR)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_PREVISTO)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO)%></b></td>
