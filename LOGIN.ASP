@@ -1,6 +1,6 @@
 <!--#include file="_database/athdbConnCS.asp"-->
 <!--#include file="_database/athUtilsCS.asp"--> 
-<% 'ATENÇÃO: doctype, language, option explicit, etc... estão no athDBConn %> 
+<% 'ATENï¿½ï¿½O: doctype, language, option explicit, etc... estï¿½o no athDBConn %> 
 <% 'VerificaDireito "|VIEW|", BuscaDireitosFromDB("modulo_...", Request.Cookies("pVISTA")("ID_USUARIO")), true %>
 <%
  Dim objConn, objRS
@@ -22,13 +22,13 @@
 	auxStr = replace(auxStr,"/aspsystems/_pvista/","")     'retorna: proevento ou /proevento
 	auxStr = replace(auxStr,"/","")                        'retorna: proevento
     CFG_DB = auxStr + "_dados"
-	CFG_DB = replace(CFG_DB,"_METRO_dados","METRO_dados") 'Caso especial, banco do ambiente /_pvista não tem o "_" no nome "	
+	CFG_DB = replace(CFG_DB,"_METRO_dados","METRO_dados") 'Caso especial, banco do ambiente /_pvista nï¿½o tem o "_" no nome "	
  end if
 
  AbreDBConn objConn, CFG_DB
 	
  ' ------------------------------------------------------------------------
- ' Monta consulta para localizar os dados do usuário informado             
+ ' Monta consulta para localizar os dados do usuï¿½rio informado             
  ' ------------------------------------------------------------------------
   strSQL = "SELECT ID_USER, GRP_USER, NOME, EMAIL, DT_INATIVO" & _
            "  FROM tbl_USUARIO" & _
@@ -37,7 +37,7 @@
   set objRS = objConn.execute(strSQL)
 
  ' ------------------------------------------------------------------------
- ' Busca dados relativos as informações do site no banco (athcsm.mdb) 
+ ' Busca dados relativos as informaï¿½ï¿½es do site no banco (athcsm.mdb) 
  ' para montagem na tela principal
  ' ------------------------------------------------------------------------
  MontaArrySiteInfo arrScodi, arrSdesc
@@ -68,18 +68,14 @@
 			<% 'end if %>
 
             <p class="description" id="_general">
-                <!-- 
-                Acesso ao sistema, servidor <strong><%'=Request.ServerVariables("SERVER_NAME") %></strong>, 
-                plataforma <%'=Request.ServerVariables("SERVER_SOFTWARE")%>, conexão com banco de dados 
-                <strong><%'=arrSdesc(ArrayIndexOf(arrScodi,"CLIENTE"))%></strong> (<%'=CFG_DB%>).
-                //-->
+                teste
             </p>
             <h3 id="_heading"><i class="icon-accessibility on-left"></i>CORRETORA MERCADO</h2>
             
             <div class="description">
 				<%
                  if getParam("erro")="" then 
-                   response.write ("<p class='text-muted'>Bem-vindo ao sistema de gestão da ")
+                   response.write ("<p class='text-muted'>Bem-vindo ao sistema de gestï¿½o da ")
                    response.write ("<br>" & arrSdesc(ArrayIndexOf(arrScodi,"CLIENTE")) & "&nbsp;<small>(" & CFG_DB & ")</small><br></p>")
                  else
                    response.write "<p class='text-alert'><strong>ERRO</strong>:&nbsp;<small>" & Request.Form("erro") & "</small></p>"
@@ -91,9 +87,9 @@
                             <input type="hidden" name="var_db" id="var_db" value="<%=CFG_DB%>">
                             <input type="hidden" name="var_cod_evento" id="var_cod_evento" value="101">
                            
-                            <!-- label>Usuário</label //-->
+                            <!-- label>Usuï¿½rio</label //-->
                             <div class="input-control text" data-role="input-control">
-                                <input type="text" name="var_userid" id="var_userid" placeholder="usuário">
+                                <input type="text" name="var_userid" id="var_userid" placeholder="usuï¿½rio">
                                 <button class="btn-clear" tabindex="-1"></button>
                             </div>
                             <!-- label>Senha</label //-->
