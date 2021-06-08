@@ -72,7 +72,8 @@ End Function
 
 'Response.Write("<br>strDT_INICIO " & strDT_INICIO)
 'Response.Write("<br>strDT_FIM " & strDT_FIM)
-
+Response.ContentType = "application/vnd.ms-excel"
+Response.AddHeader "Content-Disposition", "attachment; filename=excelTest.xls"
 
 %>
 <html>
@@ -89,17 +90,10 @@ End Function
   <tr> 
     <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
       <%	  
-	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))
-	  
+	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))	  
 	  %> </td>
   </tr>
-  <tr> 
-    <td width="299" class="arial12Bold">&nbsp;</td>
-    <td align="right" class="arial12Bold">
-      <a href="movimentoMensalComissaoExcel.asp?DBVAR_STR_IDREPRE=<%=strIdRepre%>&var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=<%=Request("order")%>&direction=<%=Request("direction")%>" class="Tahomacinza9"><img src="../img/ico_excel_mini.gif" width="16" height="16" hspace="1" border="0">excel</a>&nbsp;&nbsp; 
-      <a href="javascript:window.print();" class="Tahomacinza9"><img src="../img/ico_impressora_mini.gif" border="0">imprimir</a>
-    </td>
-  </tr>
+  
 </table>
 <table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#FFFFFF" class="arial12">
   <tr align='left'> 
