@@ -218,7 +218,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
  %>
  <tr align='left'> 
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("data")&""%></td>
-    <td bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
+    <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
     <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
 	  <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
@@ -249,7 +249,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 	'End If
 
  	 i = i + 1
-      objRS.move_next
+      objRS.movenext
 	 If i mod 50 = 0 Then
 	   Response.Flush()
 	 End If
