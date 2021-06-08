@@ -108,15 +108,11 @@ End Function
         Data</b>
     </td>
 
-    <td bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b>
-		<!--a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=TITULO&direction=ASC"><img src="../_DBManager/gridlnkASC.gif" width="11" height="11" border="0" align="absmiddle"></a>
-		<a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=TITULO&direction=DESC"><img src="../_DBManager/gridlnkDESC.gif" width="11" height="11" border="0" align="absmiddle"></a-->
+    <td bgcolor="#FFCC66" class="arial12Bold"><b>		
         Contrato</b>
     </td>
     
-    <td  bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b>
-		<!--a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=RESUMIDO&direction=ASC"><img src="../_DBManager/gridlnkASC.gif" width="11" height="11" border="0" align="absmiddle"></a>
-		<a href="rel_budget.asp?var_dt_inicio=<%=strDT_INICIO%>&var_dt_fim=<%=strDT_FIM%>&order=RESUMIDO&direction=DESC"><img src="../_DBManager/gridlnkDESC.gif" width="11" height="11" border="0" align="absmiddle"></a-->
+    <td  bgcolor="#FFCC66" class="arial12Bold"><b>		
         Comprador</b>
     </td>
 
