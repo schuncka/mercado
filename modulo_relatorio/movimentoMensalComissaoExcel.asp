@@ -73,7 +73,7 @@ End Function
 'Response.Write("<br>strDT_INICIO " & strDT_INICIO)
 'Response.Write("<br>strDT_FIM " & strDT_FIM)
 Response.ContentType = "application/vnd.ms-excel"
-Response.AddHeader "Content-Disposition", "attachment; filename=excelTest.xls"
+Response.AddHeader "Content-Disposition", "attachment; filename=MovimentoMensalComissao.xls"
 
 %>
 <html>
