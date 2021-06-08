@@ -14,7 +14,7 @@
  
 
  
-Dim objConn, ObjRS
+ Dim objConn, ObjRS
  Dim strSQL, strSQLClause, auxstr, MyChecked
  Dim auxTimeInic, auxTimeFim
  Dim strBgColor, i, j, cont
@@ -88,7 +88,7 @@ End Function
   <tr> 
     <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
       <%	  
-	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
+	    Response.Write("<br>Perï¿½odo: " & PrepData(strDT_INICIO,True,True) & " a " & PrepData(strDT_FIM,True,True))
 	  
 	  %> </td>
   </tr>
@@ -120,35 +120,35 @@ End Function
         Comprador</b>
     </td>
 
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Vendedor</b>
     </td>
         
-	<td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+	<td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Representante</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Produto</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Quantidade</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Preço</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="left" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Valor Operação</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	% COMIS V/C</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Participação</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Total Participação</b>
     </td>
-    <td  align="center" bgcolor="#FFCC66" class="arial12Bold"><b>		
+    <td  align="right" bgcolor="#FFCC66" class="arial12Bold"><b>		
     	Mercado</b>
     </td>
   </tr>
@@ -227,23 +227,23 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10)%></td>
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
-	  <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("quantidade"),2)%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("preco"),2)%></td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("vlrTotal"),2)%></b>
+    <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
+	  <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
+    <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("quantidade"),2)%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("preco"),2)%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormataDouble(objRS("vlrTotal"),2)%></b>
     </td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%=FormataDouble(vlrComissaoV,2)%> / <%=FormataDouble(vlrComissaoC,2)%></b>
     </td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
     </td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
     </td>
-    <td  align="center" bgcolor="<%=bgColor%>" class="arial12"><b>		
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	0,00</b>
     </td>
   </tr>
@@ -264,8 +264,8 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO limit 30; "
 ' end if
 %>
   <tr align='left'> 
-    <td colspan="9" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
-	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO_ANTERIOR)%></b></td>
+    <td colspan="10" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
+	
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_PREVISTO)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_ECONOMIA)%></b></td>
