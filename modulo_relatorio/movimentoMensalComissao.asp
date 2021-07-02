@@ -297,19 +297,9 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
             bgColor = "#DCDCDC"
         end if
 
-        dblVlrComissaoParticipacao = calcComissaoRepre(objRS("repre")
-                                         , vlrComissaoV
-                                         , objRS("preco")
-                                         , objRS("quantidade")
-                                         , vlrComissao
-                                         , vlrComissaoC)
+        dblVlrComissaoParticipacao = calcComissaoRepre(objRS("repre"), vlrComissaoV, objRS("preco"), objRS("quantidade"), vlrComissao, vlrComissaoC)
 
-        dblVlrComissaoMercado = calcComissaoMercado(objRS("repre")
-                                                  , objRS("preco")
-                                                  , objRS("quantidade")
-                                                  , vlrComissaoV
-                                                  , vlrComissaoC
-                                                  , vlrComissao)
+        dblVlrComissaoMercado = calcComissaoMercado(objRS("repre"), objRS("preco"), objRS("quantidade"), vlrComissaoV, vlrComissaoC, vlrComissao)
               
 
  %>
