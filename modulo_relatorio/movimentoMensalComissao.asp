@@ -23,7 +23,7 @@
  Dim strVLR_PREVISTO, strVLR_REALIZADO, strVLR_REALIZADO_ANTERIOR, strVLR_ECONOMIA
  Dim strSUB_VLR_PREVISTO, strSUB_VLR_REALIZADO, strSUB_VLR_REALIZADO_ANTERIOR, strSUB_VLR_ECONOMIA
  Dim strTOT_VLR_PREVISTO, strTOT_VLR_REALIZADO, strTOT_VLR_REALIZADO_ANTERIOR, strTOT_VLR_ECONOMIA
- Dim strORDERBY, strDIRECTION, vlrComissaoC,vlrComissaoV, bgColor, strIdRepre
+ Dim strORDERBY, strDIRECTION, vlrComissaoC,vlrComissaoV, bgColor, strIdRepre,vlrComissao
   
  
    AbreDBConn objConn, CFG_DB_DADOS 
@@ -56,6 +56,71 @@ Function HasTimeInside(DateToEvaluate)
 
 End Function
 
+
+
+Function calculaComissao(comissaoComprador As Double, comissaoVendedor As Double, PRECO As Double, Quantidade As Double, comissaoMercado As Double) As Double
+
+If IsNull(comissaoComprador) Then
+    comissaoComprador = 0
+End If
+
+If IsNull(comissaoVendedor) Then
+    comissaoVendedor = 0
+End If
+
+If IsNull(PRECO) Then
+    PRECO = 0
+End If
+
+If IsNull(Quantidade) Then
+    Quantidade = 0
+End If
+
+If IsNull(comissaoMercado) Then
+    comissaoMercado = 0
+End If
+calculaComissao = ((comissaoComprador * PRECO * Quantidade) * comissaoMercado) + ((comissaoVendedor * PRECO * Quantidade) * comissaoMercado)
+
+'COMISSAOC]*[preco]*[quantidade])*[COMISSAO])+(([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])
+
+End Function
+
+'Function calcComissaoMercado(IDREPRE As String, PRECO As Double, Quantidade As Double, ComissaoV As Double, ComissaoC As Double, comissao As Double) As Double
+Function calcComissaoMercado(IDREPRE As String, PRECO As Double, Quantidade As Double, ComissaoV As Double, ComissaoC As Double, COMISSAO As Double) As Double
+Dim valor_comissao As Double
+Dim valor1, valor2 As Double
+If IDREPRE = "104835" Or IDREPRE = "108631" Then
+    valor_comissao = ((PRECO * Quantidade) * ComissaoV) + ((ComissaoC * PRECO * Quantidade) * COMISSAO)
+Else
+    valor1 = ((PRECO * Quantidade) * ComissaoV) - ((ComissaoV * PRECO * Quantidade) * COMISSAO)
+    valor2 = ((ComissaoC * PRECO * Quantidade) * COMISSAO)
+    valor_comissao = valor1 + valor2
+End If
+calcComissaoMercado = valor_comissao
+'calcComissaoMercado = PRECO * Quantidade * ComissaoV
+End Function
+
+
+
+
+Function calcComissaoRepre(IDREPRE As String, ComissaoV As Double, PRECO As Double, Quantidade As Double, COMISSAO As Double, ComissaoC As Double) As Double
+Dim valor_comissao As Double
+Dim valor1, valor2 As Double
+'COMISSAO_REPRE: (([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ùNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])
+If IDREPRE = "104835" Then
+    valor_comissao = 0
+Else
+    valor1 = (ComissaoV * PRECO * Quantidade) * COMISSAO
+    valor2 = (ComissaoC * PRECO * Quantidade) * COMISSAO
+    valor_comissao = valor1 + valor2
+End If
+calcComissaoRepre = valor_comissao
+
+End Function
+
+
+'COMISSAO_MERCADO: SeImed([idrepre]='104835';(([preco]*[quantidade])*([comissaov]));((([preco]*[quantidade])*([comissaov]))-
+'(([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ùNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])))
 
 
  If not IsDate(strDT_INICIO) Then
@@ -146,7 +211,7 @@ End Function
     	Total ParticipaÁ„o</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Mercado</b>
+    	Mercado</b> =SeImed([Comissaoco]<>0;([vlrtotal]*([Comissaoco]))-[COMISSAO_REPRESENTANTE];[COMISSAO_MERCADO])
     </td>
   </tr>
   <%
@@ -171,6 +236,7 @@ strSQL = strSQL & " , IIf(IsNull([COMISSAO]),0,[COMISSAO])*100 AS Comissao "
 strSQL = strSQL & " , ((IIf(IsNull([preco]),0,[preco]))*IIf(IsNull([quantidade]),0,[quantidade]))*(IIf(IsNull([comissaov]),0,[comissaov])+IIf(IsNull([comissaoc]),0,[comissaoc])) AS Resultado "
 strSQL = strSQL & " , calcComissaoMercado([tbl_contrato]![idrepre],IIf(IsNull([tbl_contrato]![preco]),0,[tbl_contrato]![preco]),IIf(IsNull([tbl_contrato]![quantidade]),0,[tbl_contrato]![quantidade]),IIf(IsNull([tbl_contrato]![comissaov]),0,[tbl_contrato]![comissaov]),IIf(IsNull([tbl_contrato]![comissaoc]),0,[tbl_contrato]![comissaoc]),IIf(IsNull([tbl_contrato]![comissao]),0,[tbl_contrato]![comissao])) AS COMISSAO_MERCADO "
 strSQL = strSQL & " */ "
+
 strSQL = strSQL & " , TBL_CONTRATO.IDCONTRATO AS CONTRATO "
 strSQL = strSQL & " , tComprador.NomeDoCliente AS COMPRADOR "
 strSQL = strSQL & " , tVendedor.NomeDoCliente  AS VENDEDOR "
@@ -204,6 +270,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
    Do While Not objRS.EOF   
 		    vlrComissaoC = 0
         vlrComissaoV = 0
+        vlrComissao  = 0
 
         if objRS("comissaoc") <> "" Then
             vlrComissaoC = objRS("comissaoc")
@@ -217,11 +284,33 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
             vlrComissaoV = 0
         end if
 
+        if objRS("comissao") <> "" Then
+            vlrComissao = objRS("comissao")
+        else 
+            vlrComissao = 0
+        end if
+
         if bgColor = "#DCDCDC" then
             bgColor = "#F5FFFA"
         else
             bgColor = "#DCDCDC"
         end if
+
+        dblVlrComissaoParticipacao = calcComissaoRepre(objRS("repre")
+                                         , vlrComissaoV
+                                         , objRS("preco")
+                                         , objRS("quantidade")
+                                         , vlrComissao
+                                         , vlrComissaoC)
+
+        dblVlrComissaoMercado = calcComissaoMercado(objRS("repre")
+                                                  , objRS("preco")
+                                                  , objRS("quantidade")
+                                                  , vlrComissaoV
+                                                  , vlrComissaoC
+                                                  , vlrComissao)
+              
+
  %>
  <tr align='left'> 
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10)%></td>
@@ -235,16 +324,16 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("vlrTotal"))%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormatNumber(vlrComissaoV)%> / <%=FormatNumber(vlrComissaoC)%></b>
+    	<%=FormatNumber(vlrComissaoV)%> / <%=FormatNumber(vlrComissaoC)%></b>      
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	0,00</b>
+    	<%=FormatNumber(vlrComissao)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	0,00</b>
+    	<%=FormatNumber(dblVlrComissaoParticipacao)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	0,00</b>
+    	<%=FormatNumber(dblVlrComissaoMercado)%>
     </td>
   </tr>
 
