@@ -58,7 +58,7 @@ End Function
 
 
 
-Function calculaComissao(comissaoComprador As Double, comissaoVendedor As Double, PRECO As Double, Quantidade As Double, comissaoMercado As Double) As Double
+Function calculaComissao(comissaoComprador , comissaoVendedor , PRECO , Quantidade , comissaoMercado ) 
 
 If IsNull(comissaoComprador) Then
     comissaoComprador = 0
@@ -86,8 +86,7 @@ calculaComissao = ((comissaoComprador * PRECO * Quantidade) * comissaoMercado) +
 End Function
 
 'Function calcComissaoMercado(IDREPRE As String, PRECO As Double, Quantidade As Double, ComissaoV As Double, ComissaoC As Double, comissao As Double) As Double
-Function calcComissaoMercado(IDREPRE As String, PRECO As Double, Quantidade As Double, ComissaoV As Double, ComissaoC As Double, COMISSAO As Double) As Double
-Dim valor_comissao As Double
+Function calcComissaoMercado(IDREPRE , PRECO , Quantidade , ComissaoV , ComissaoC , COMISSAO )
 Dim valor1, valor2 As Double
 If IDREPRE = "104835" Or IDREPRE = "108631" Then
     valor_comissao = ((PRECO * Quantidade) * ComissaoV) + ((ComissaoC * PRECO * Quantidade) * COMISSAO)
@@ -103,7 +102,7 @@ End Function
 
 
 
-Function calcComissaoRepre(IDREPRE As String, ComissaoV As Double, PRECO As Double, Quantidade As Double, COMISSAO As Double, ComissaoC As Double) As Double
+Function calcComissaoRepre(IDREPRE , ComissaoV , PRECO , Quantidade , COMISSAO , ComissaoC )
 Dim valor_comissao As Double
 Dim valor1, valor2 As Double
 'COMISSAO_REPRE: (([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ùNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])
