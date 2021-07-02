@@ -24,6 +24,8 @@
  Dim strSUB_VLR_PREVISTO, strSUB_VLR_REALIZADO, strSUB_VLR_REALIZADO_ANTERIOR, strSUB_VLR_ECONOMIA
  Dim strTOT_VLR_PREVISTO, strTOT_VLR_REALIZADO, strTOT_VLR_REALIZADO_ANTERIOR, strTOT_VLR_ECONOMIA
  Dim strORDERBY, strDIRECTION, vlrComissaoC,vlrComissaoV, bgColor, strIdRepre,vlrComissao
+ Dim dblVlrComissaoParticipacao
+ Dim dblVlrComissaoMercado     
   
  
    AbreDBConn objConn, CFG_DB_DADOS 
@@ -87,7 +89,7 @@ End Function
 
 'Function calcComissaoMercado(IDREPRE As String, PRECO As Double, Quantidade As Double, ComissaoV As Double, ComissaoC As Double, comissao As Double) As Double
 Function calcComissaoMercado(IDREPRE , PRECO , Quantidade , ComissaoV , ComissaoC , COMISSAO )
-Dim valor1, valor2 As Double
+Dim valor1, valor2 
 If IDREPRE = "104835" Or IDREPRE = "108631" Then
     valor_comissao = ((PRECO * Quantidade) * ComissaoV) + ((ComissaoC * PRECO * Quantidade) * COMISSAO)
 Else
@@ -103,8 +105,8 @@ End Function
 
 
 Function calcComissaoRepre(IDREPRE , ComissaoV , PRECO , Quantidade , COMISSAO , ComissaoC )
-Dim valor_comissao As Double
-Dim valor1, valor2 As Double
+Dim valor_comissao 
+Dim valor1, valor2 
 'COMISSAO_REPRE: (([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ùNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])
 If IDREPRE = "104835" Then
     valor_comissao = 0
