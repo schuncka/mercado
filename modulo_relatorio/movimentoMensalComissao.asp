@@ -212,7 +212,7 @@ End Function
     	Total Participação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Mercado</b> =SeImed([Comissaoco]<>0;([vlrtotal]*([Comissaoco]))-[COMISSAO_REPRESENTANTE];[COMISSAO_MERCADO])
+    	Mercado</b>
     </td>
   </tr>
   <%
