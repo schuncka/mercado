@@ -298,9 +298,9 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
         end if
 
         dblVlrComissaoParticipacao = calcComissaoRepre (objRS("repre"), vlrComissaoV, objRS("preco"), objRS("quantidade"), vlrComissao, vlrComissaoC)
-
-        dblVlrComissaoMercado = calcComissaoMercado objRS("repre"), objRS("preco"), objRS("quantidade"), vlrComissaoV, vlrComissaoC, vlrComissao
-              
+                                      'calcComissaoRepre(IDREPRE       , ComissaoV    , PRECO        , Quantidade         , COMISSAO   , ComissaoC )
+        dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), objRS("preco"), objRS("quantidade"), vlrComissaoV, vlrComissaoC, vlrComissao)
+                                'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
 
  %>
  <tr align='left'> 
