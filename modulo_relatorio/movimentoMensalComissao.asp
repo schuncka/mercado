@@ -107,7 +107,7 @@ End Function
 Function calcComissaoRepre(IDREPRE , ComissaoV , PRECO , Quantidade , COMISSAO , ComissaoC )
 Dim valor_comissao 
 Dim valor1, valor2 
-'COMISSAO_REPRE: (([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ùNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])
+'COMISSAO_REPRE: (([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ÔøΩNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])
 If IDREPRE = "104835" Then
     valor_comissao = 0
 Else
@@ -121,7 +121,7 @@ End Function
 
 
 'COMISSAO_MERCADO: SeImed([idrepre]='104835';(([preco]*[quantidade])*([comissaov]));((([preco]*[quantidade])*([comissaov]))-
-'(([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ùNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])))
+'(([COMISSAOV]*[preco]*[quantidade])*[COMISSAO])+SeImed(ÔøΩNulo(([COMISSAOC]*[preco]*[quantidade])*[COMISSAO]);0;([COMISSAOC]*[preco]*[quantidade])*[COMISSAO])))
 
 
  If not IsDate(strDT_INICIO) Then
@@ -155,7 +155,7 @@ End Function
   <tr> 
     <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
       <%	  
-	    Response.Write("<br>PerÌodo: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))
+	    Response.Write("<br>PerÔøΩodo: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))
 	  
 	  %> </td>
   </tr>
@@ -197,19 +197,19 @@ End Function
     	Quantidade</b>
     </td>
     <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	PreÁo</b>
+    	PreÔøΩo</b>
     </td>
     <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Valor OperaÁ„o</b>
+    	Valor OperaÔøΩÔøΩo</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	% COMIS V/C</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	ParticipaÁ„o</b>
+    	ParticipaÔøΩÔøΩo</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Total ParticipaÁ„o</b>
+    	Total ParticipaÔøΩÔøΩo</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Mercado</b>
@@ -248,13 +248,13 @@ strSQL = strSQL & "     LEFT JOIN TBL_CLIENTES AS tComprador ON (TBL_CONTRATO.Co
 strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tVendedor ON (TBL_CONTRATO.IDEMPRESA = tVendedor.IDEMPRESA) AND (TBL_CONTRATO.Vendedor = tVendedor.CodigoDoCliente))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tRepre ON (TBL_CONTRATO.IDREPRE = tRepre.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tRepre.IDEMPRESA))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_PRODUTOS ON (TBL_CONTRATO.IDEMPRESA = TBL_PRODUTOS.IDEMPRESA) AND (TBL_CONTRATO.Produto = TBL_PRODUTOS.IDPROD) "
-strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_INICIO, False, False) & "' And '" & PrepDataIve(strDT_FIM, False, False) & "') AND ((tRepre.NomeDoCliente) Is Not Null)) "
+strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_INICIO, False, False) & "' And '" & PrepDataIve(strDT_FIM, False, False) & "') /*AND ((tRepre.NomeDoCliente) Is Not Null))*/ "
 if strIdRepre <> "" then
   strSQL = strSQL & " and tbl_contrato.idrepre = " & strIdRepre
 end if
 strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
 
-'response.write strSQL
+response.write strSQL
   
 
    set objRS = objConn.Execute(strSQL)  
