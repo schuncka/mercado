@@ -197,7 +197,7 @@ End Function
     	Quantidade</b>
     </td>
     <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Preï¿½o</b>
+    	Preço</b>
     </td>
     <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Valor Operação</b>
@@ -244,7 +244,7 @@ strSQL = strSQL & " , tVendedor.NomeDoCliente  AS VENDEDOR "
 strSQL = strSQL & " , tRepre.NomeDoCliente     AS REPRE "
 strSQL = strSQL & " , TBL_PRODUTOS.Produto "
 strSQL = strSQL & " FROM (((TBL_CONTRATO  "
-strSQL = strSQL & "     LEFT JOIN TBL_CLIENTES AS tComprador ON (TBL_CONTRATO.Comprador = tComprador.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tComprador.IDEMPRESA))  "
+strSQL = strSQL & "   LEFT JOIN TBL_CLIENTES AS tComprador ON (TBL_CONTRATO.Comprador = tComprador.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tComprador.IDEMPRESA))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tVendedor ON (TBL_CONTRATO.IDEMPRESA = tVendedor.IDEMPRESA) AND (TBL_CONTRATO.Vendedor = tVendedor.CodigoDoCliente))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tRepre ON (TBL_CONTRATO.IDREPRE = tRepre.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tRepre.IDEMPRESA))  "
 strSQL = strSQL & " 	LEFT JOIN TBL_PRODUTOS ON (TBL_CONTRATO.IDEMPRESA = TBL_PRODUTOS.IDEMPRESA) AND (TBL_CONTRATO.Produto = TBL_PRODUTOS.IDPROD) "
@@ -254,7 +254,7 @@ if strIdRepre <> "" then
 end if
 strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
 
-'response.write strSQL
+response.write strSQL
   
 
    set objRS = objConn.Execute(strSQL)  
