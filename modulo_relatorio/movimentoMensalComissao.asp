@@ -200,16 +200,16 @@ End Function
     	Pre�o</b>
     </td>
     <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Valor Opera��o</b>
+    	Valor Operação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	% COMIS V/C</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Participa��o</b>
+    	Participação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Total Participa��o</b>
+    	Total Participação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Mercado</b>
