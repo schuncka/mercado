@@ -89,7 +89,7 @@ End Function
 
 'Function calcComissaoMercado(IDREPRE As String, PRECO As Double, Quantidade As Double, ComissaoV As Double, ComissaoC As Double, comissao As Double) As Double
 Function calcComissaoMercado(IDREPRE , PRECO , Quantidade , ComissaoV , ComissaoC , COMISSAO )
-Dim valor1, valor2 
+Dim valor1, valor2 , valor_comissao
 If IDREPRE = "104835" Or IDREPRE = "108631" Then
     valor_comissao = ((PRECO * Quantidade) * ComissaoV) + ((ComissaoC * PRECO * Quantidade) * COMISSAO)
 Else
