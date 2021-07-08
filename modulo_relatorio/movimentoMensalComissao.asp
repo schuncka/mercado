@@ -155,7 +155,7 @@ End Function
   <tr> 
     <td colspan="2" align="center" class="arial12Bold">Movimento Mensal 
       <%	  
-	    Response.Write("<br>Perï¿½odo: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))
+	    Response.Write("<br>Período: " & PrepData(strDT_INICIO,True,false) & " a " & PrepData(strDT_FIM,True,false))
 	  
 	  %> </td>
   </tr>
@@ -200,16 +200,16 @@ End Function
     	Preï¿½o</b>
     </td>
     <td  align="left" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Valor OperaÃ§Ã£o</b>
+    	Valor Operação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	% COMIS V/C</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	ParticipaÃ§Ã£o</b>
+    	Participação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
-    	Total ParticipaÃ§Ã£o</b>
+    	Total Participação</b>
     </td>
     <td  align="right" bgcolor="#FFCC66" class="arial12Bold" valign="middle"><b>		
     	Mercado</b>
