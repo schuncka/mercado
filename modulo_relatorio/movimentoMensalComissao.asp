@@ -312,7 +312,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("quantidade"))%></td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("preco"))%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("vlrTotal"))%></b>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("preco")*objRS("quantidade"))%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%=FormatNumber(vlrComissaoV)%> / <%=FormatNumber(vlrComissaoC)%></b>      
