@@ -1,28 +1,28 @@
 <!--#include file="../_database/athdbConnCS.asp"-->
 <!--#include file="../_database/athUtilsCS.asp"-->  
-<% 'ATENÇÃO: doctype, language, option explicit, etc... estão no athDBConn %> 
+<% 'ATENï¿½ï¿½O: doctype, language, option explicit, etc... estï¿½o no athDBConn %> 
 <% 'VerificaDireito "|INS|", BuscaDireitosFromDB("modulo_clientes",Session("METRO_USER_ID_USER")), true %>
 <%
 
  Const MDL = "DEFAULT"          											' - Default do Modulo...
  Const LTB = "tbl_clientes_sub"							    		' - Nome da Tabela...
  Const DKN = "cod_tbl_clientes_sub"										      	  		' - Campo chave...
- Const DLD = "../modulo_clientes/mini_Contatos/default.asp" 	' "../evento/data.asp" - 'Default Location após Deleção
- Const TIT = "Relatório Comissão"													' - Nome/Titulo sendo referencia como titulo do módulo no botão de filtro
+ Const DLD = "../modulo_clientes/mini_Contatos/default.asp" 	' "../evento/data.asp" - 'Default Location apï¿½s Deleï¿½ï¿½o
+ Const TIT = "Relatï¿½rio Comissï¿½o"													' - Nome/Titulo sendo referencia como titulo do mï¿½dulo no botï¿½o de filtro
 
- 'Relativas a conexão com DB, RecordSet e SQL
+ 'Relativas a conexï¿½o com DB, RecordSet e SQL
  Dim objConn, objRS, strSQL, strSQL2
  'Adicionais
  Dim i,j, strINFO, strALL_PARAMS, strSWFILTRO
  'Relativas a SQL principal do modulo
  Dim strFields, arrFields, arrLabels, arrSort, arrWidth, iResult, strResult
- 'Relativas a Paginação	
+ 'Relativas a Paginaï¿½ï¿½o	
  Dim  arrAuxOP, flagEnt, numPerPage, CurPage, auxNumPerPage, auxCurPage
  'Relativas a FILTRAGEM
  Dim  strCodCli
  
 
-'Carraga a chave do registro, porém neste caso a relação masterdetail 
+'Carraga a chave do registro, porï¿½m neste caso a relaï¿½ï¿½o masterdetail 
 'ocorre com COD_EVENTO mesmo a chave do pai sendo ID_AUTO. 
 '---------------carrega cachereg do pai local cred-----------------
 'strCodEvento 	= Replace(GetParam("var_cod_evento"),"'","''")
@@ -39,11 +39,11 @@ strCodCli 		= Replace(GetParam("var_chavereg"),"'","''")
 <script src="../_scripts/scriptsCS.js"></script>
 <script language="javascript" type="text/javascript">
 <!-- 
-/* INI: OK, APLICAR e CANCELAR, funções para action dos botões ---------
-Criando uma condição pois na ATHWINDOW temos duas opções
+/* INI: OK, APLICAR e CANCELAR, funï¿½ï¿½es para action dos botï¿½es ---------
+Criando uma condiï¿½ï¿½o pois na ATHWINDOW temos duas opï¿½ï¿½es
 de abertura de janela "POPUP", "NORMAL" e com este tratamento abaixo os 
-botões estão aptos a retornar para default location´s
-corretos em cada opção de janela -------------------------------------- */
+botï¿½es estï¿½o aptos a retornar para default locationï¿½s
+corretos em cada opï¿½ï¿½o de janela -------------------------------------- */
 function ok() { 
  
 	if (validateRequestedFields("forminsert")) { 
@@ -59,11 +59,11 @@ function cancelar() {
   	 end if
  %> 
 }
-/* FIM: OK, APLICAR e CANCELAR, funções para action dos botões ------- */
+/* FIM: OK, APLICAR e CANCELAR, funï¿½ï¿½es para action dos botï¿½es ------- */
 </script>
 </head>
 <body class="metro" id="metrotablevista" >
-<!-- INI: BARRA que contem o título do módulo e ação da dialog //-->
+<!-- INI: BARRA que contem o tï¿½tulo do mï¿½dulo e aï¿½ï¿½o da dialog //-->
 <div class="bg-darkEmerald fg-white" style="width:100%; height:50px; font-size:20px; padding:10px 0px 0px 10px;">
    <%=TIT%>&nbsp;<sup><span style="font-size:12px"></span></sup>
 </div>
@@ -107,7 +107,7 @@ function cancelar() {
                 
 
                  <div class="row">
-                        <div class="span2"><p>Representante</p></div>
+                        <div class="span2"><p>Representante (teste)</p></div>
                             <div class="span8"><p>
                                <div class="input-control select info-state" data-role="input-control">
                                     <select id="DBVAR_STR_IDREPRE"name="DBVAR_STR_IDREPRE" >
@@ -124,15 +124,15 @@ function cancelar() {
                 </div> <!--FIM GRID//-->
             </div><!--fim do frame dados//-->           
 	</div><!--FIM TABCONTROL //--> 
-  <div style="padding-top:16px;"><!--INI: BOTÕES/MENSAGENS//-->
+  <div style="padding-top:16px;"><!--INI: BOTï¿½ES/MENSAGENS//-->
         <div style="float:left">
             <input  class="primary" type="button"  value="OK"      onClick="javascript:ok();return false;">
             <input  class=""        type="button"  value="CANCEL"  onClick="javascript:cancelar();return false;">                               
         </div>
         <div style="float:right">
-	        <small class="text-left fg-teal" style="float:right"> <strong>(borda azul) e/ou (*)</strong> campos obrigatórios</small>
+	        <small class="text-left fg-teal" style="float:right"> <strong>(borda azul) e/ou (*)</strong> campos obrigatï¿½rios</small>
         </div> 
-    </div><!--FIM: BOTÕES/MENSAGENS //--> 
+    </div><!--FIM: BOTï¿½ES/MENSAGENS //--> 
 	</form>
 </div> <!--FIM ----DIV CONTAINER//-->  
 </body>
