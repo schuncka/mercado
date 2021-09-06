@@ -107,7 +107,7 @@ function cancelar() {
                 
 
                  <div class="row">
-                        <div class="span2"><p>Representante (teste)</p></div>
+                        <div class="span2"><p>Representante</p></div>
                             <div class="span8"><p>
                                <div class="input-control select info-state" data-role="input-control">
                                     <select id="DBVAR_STR_IDREPRE"name="DBVAR_STR_IDREPRE" >
