@@ -310,21 +310,21 @@ response.write strSQL
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
 	  <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("quantidade"))%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("preco"))%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(objRS("preco")*objRS("quantidade"))%></b>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("quantidade"))%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("preco"))%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("preco")*objRS("quantidade"))%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormatNumber(vlrComissaoV)%> / <%=FormatNumber(vlrComissaoC)%></b>      
+    	<%=(vlrComissaoV)%> / <%=(vlrComissaoC)%></b>      
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormatNumber(vlrComissao)%></b>
+    	<%=(vlrComissao)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormatNumber(dblVlrComissaoParticipacao)%></b>
+    	<%=(dblVlrComissaoParticipacao)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormatNumber(dblVlrComissaoMercado)%>
+    	<%=(dblVlrComissaoMercado)%>
     </td>
   </tr>
 
