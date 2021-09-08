@@ -274,19 +274,19 @@ response.write strSQL
         vlrComissao  = 0
 
         if objRS("comissaoc") <> "" Then
-            vlrComissaoC = objRS("comissaoc")
+            vlrComissaoC = replace(objRS("comissaoc"),".",",")
         else 
             vlrComissaoC = 0
         end if
 
         if objRS("comissaov") <> "" Then
-            vlrComissaoV = objRS("comissaov")
+            vlrComissaoV = replace(objRS("comissaov"),".",",")
         else 
             vlrComissaoV = 0
         end if
 
         if objRS("comissao") <> "" Then
-            vlrComissao = objRS("comissao")
+            vlrComissao = replace(objRS("comissao"),".",",")
         else 
             vlrComissao = 0
         end if
@@ -297,9 +297,9 @@ response.write strSQL
             bgColor = "#DCDCDC"
         end if
         
-        dblVlrComissaoParticipacao = calcComissaoRepre (objRS("repre"), vlrComissaoV, objRS("preco"), objRS("quantidade"), vlrComissao, vlrComissaoC)
+        dblVlrComissaoParticipacao = calcComissaoRepre (objRS("repre"), vlrComissaoV, replace(objRS("preco"),".",","), replace(objRS("quantidade"),".",","), vlrComissao, vlrComissaoC)
                                       'calcComissaoRepre(IDREPRE       , ComissaoV    , PRECO        , Quantidade         , COMISSAO   , ComissaoC )
-        dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), objRS("preco"), objRS("quantidade"), vlrComissaoV, vlrComissaoC, vlrComissao)
+        dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), replace(objRS("preco"),".",","), replace(objRS("quantidade"),".",","), vlrComissaoV, vlrComissaoC, vlrComissao)
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
 
  %>
@@ -310,9 +310,9 @@ response.write strSQL
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
 	  <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("quantidade"))%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("preco"))%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("vlrTotal"))%></b>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("quantidade"),".",","),2)%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("preco"),".",","),2)%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("vlrTotal"),".",","),2)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%=(vlrComissaoV)%> / <%=(vlrComissaoC)%></b>      
