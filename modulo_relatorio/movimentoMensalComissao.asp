@@ -301,7 +301,8 @@ response.write strSQL
                                       'calcComissaoRepre(IDREPRE       , ComissaoV    , PRECO        , Quantidade         , COMISSAO   , ComissaoC )
         dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), replace(objRS("preco"),".",","), replace(objRS("quantidade"),".",","), vlrComissaoV, vlrComissaoC, vlrComissao)
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
-
+        acumdblVlrComissaoParticipacao = dblVlrComissaoParticipacao+acumdblVlrComissaoParticipacao
+        acumdblVlrComissaoMercado = dblVlrComissaoMercado+acumdblVlrComissaoMercado
  %>
  <tr align='left'> 
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10)%></td>
@@ -315,16 +316,16 @@ response.write strSQL
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("vlrTotal"),".",","),2)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=(vlrComissaoV)%> / <%=(vlrComissaoC)%></b>      
+    	<%=FormatNumber((vlrComissaoV*100),2)%> / <%=FormatNumber((vlrComissaoC*100),2)%></b>      
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=(vlrComissao)%></b>
+    	<%=FormatNumber((vlrComissao*100),2)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=(dblVlrComissaoParticipacao)%></b>
+    	<%=FormatNumber(dblVlrComissaoParticipacao,2)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=(dblVlrComissaoMercado)%>
+    	<%=FormatNumber(dblVlrComissaoMercado,2)%>
     </td>
   </tr>
 
@@ -346,9 +347,9 @@ response.write strSQL
   <tr align='left'> 
     <td colspan="10" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
 	
-	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_PREVISTO)%></b></td>
-	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_REALIZADO)%></b></td>
-	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(strTOT_VLR_ECONOMIA)%></b></td>
+	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;</td>
+	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(acumdblVlrComissaoMercado)%></b></td>
+	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(acumdblVlrComissaoParticipacao)%></b></td>
   </tr>
 </table>
 <table width="100%" border="0" cellspacing="0" cellpadding="2">
