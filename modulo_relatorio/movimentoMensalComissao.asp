@@ -308,7 +308,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
         acumdblVlrComissaoParticipacao = dblVlrComissaoParticipacao+acumdblVlrComissaoParticipacao
         acumdblVlrComissaoMercado      = dblVlrComissaoMercado+acumdblVlrComissaoMercado
-        acumDblVlrOperacao             = replace(objRS("vlrTotal"),".",",")
+        acumDblVlrOperacao             = replace(objRS("vlrTotal"),".",",")+acumDblVlrOperacao
  %>
  <tr align='left'> 
 
@@ -352,9 +352,9 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
 ' end if
 %>
   <tr align='left'> 
-    <td colspan="9" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
+    <td colspan="8" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<%=FormatNumber(acumDblVlrOperacao)%></td>
-	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;</td>
+	<td colspan="2" align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;</td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(acumdblVlrComissaoMercado)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(acumdblVlrComissaoParticipacao)%></b></td>
   </tr>
