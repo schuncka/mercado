@@ -318,7 +318,7 @@ response.write strSQL
     	<%=(vlrComissaoV)%> / <%=(vlrComissaoC)%></b>      
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=(vlrComissao)%></b>
+    	<%=(vlrComissao)%>ok</b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%=(dblVlrComissaoParticipacao)%></b>
