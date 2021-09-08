@@ -28,9 +28,10 @@
  Dim dblVlrComissaoMercado     
  Dim acumdblVlrComissaoParticipacao 
  Dim acumdblVlrComissaoMercado     
-  
+ Dim acumDblVlrOperacao 
  acumdblVlrComissaoParticipacao = 0  
-  acumdblVlrComissaoMercado      = 0
+ acumdblVlrComissaoMercado     = 0
+ acumDblVlrOperacao = 0
  
    AbreDBConn objConn, CFG_DB_DADOS 
 
@@ -258,7 +259,7 @@ if strIdRepre <> "" then
 end if
 strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
 
-response.write strSQL
+'response.write strSQL
   
 
    set objRS = objConn.Execute(strSQL)  
@@ -307,6 +308,7 @@ response.write strSQL
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
         acumdblVlrComissaoParticipacao = dblVlrComissaoParticipacao+acumdblVlrComissaoParticipacao
         acumdblVlrComissaoMercado      = dblVlrComissaoMercado+acumdblVlrComissaoMercado
+        acumDblVlrOperacao             = replace(objRS("vlrTotal"),".",",")
  %>
  <tr align='left'> 
 
@@ -350,8 +352,8 @@ response.write strSQL
 ' end if
 %>
   <tr align='left'> 
-    <td colspan="10" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
-	
+    <td colspan="9" align="right" bgcolor="#FFCC66" class="arial12Bold">Total Geral&nbsp;&nbsp;</td>
+	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<%=FormatNumber(acumDblVlrOperacao)%></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;</td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(acumdblVlrComissaoMercado)%></b></td>
 	<td align="right" bgcolor="#FFCC66" class="arial12Bold">&nbsp;<b><%=FormatNumber(acumdblVlrComissaoParticipacao)%></b></td>
