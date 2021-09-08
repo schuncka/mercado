@@ -332,7 +332,12 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
     	<%=FormatNumber(dblVlrComissaoParticipacao,2)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
-    	<%=FormatNumber(dblVlrComissaoMercado,2)%>
+    	<%
+        if dblVlrComissaoMercado < 0 then
+          dblVlrComissaoMercado = dblVlrComissaoMercado *-1
+        end if
+      %>
+      <%=FormatNumber(dblVlrComissaoMercado,2)%>
     </td>
   </tr>
 
