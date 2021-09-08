@@ -312,7 +312,7 @@ response.write strSQL
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("quantidade"))%></td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("preco"))%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("preco")*objRS("quantidade"))%></b>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=(objRS("vlrTotal"))%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%=(vlrComissaoV)%> / <%=(vlrComissaoC)%></b>      
