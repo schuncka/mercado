@@ -26,7 +26,11 @@
  Dim strORDERBY, strDIRECTION, vlrComissaoC,vlrComissaoV, bgColor, strIdRepre,vlrComissao
  Dim dblVlrComissaoParticipacao
  Dim dblVlrComissaoMercado     
+ Dim acumdblVlrComissaoParticipacao 
+ Dim acumdblVlrComissaoMercado     
   
+ acumdblVlrComissaoParticipacao = 0  
+  acumdblVlrComissaoMercado      = 0
  
    AbreDBConn objConn, CFG_DB_DADOS 
 
@@ -302,10 +306,10 @@ response.write strSQL
         dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), replace(objRS("preco"),".",","), replace(objRS("quantidade"),".",","), vlrComissaoV, vlrComissaoC, vlrComissao)
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
         acumdblVlrComissaoParticipacao = dblVlrComissaoParticipacao+acumdblVlrComissaoParticipacao
-        acumdblVlrComissaoMercado = dblVlrComissaoMercado+acumdblVlrComissaoMercado
+        acumdblVlrComissaoMercado      = dblVlrComissaoMercado+acumdblVlrComissaoMercado
  %>
  <tr align='left'> 
- 
+
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10)%></td>
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
