@@ -333,7 +333,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%
-        response.write(dblVlrComissaoMercado)
+        'response.write(dblVlrComissaoMercado)
         if dblVlrComissaoMercado < 0 then
           dblVlrComissaoMercado = dblVlrComissaoMercado *-1
         end if
