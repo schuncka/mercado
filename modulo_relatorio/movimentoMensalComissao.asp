@@ -304,7 +304,7 @@ response.write strSQL
 
  %>
  <tr align='left'> 
-    <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10) & "  " & FormatNumber(replace(objRS("quantidade"),".",",") * replace(objRS("preco"),".",","),2)%></td>
+    <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10)%></td>
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
