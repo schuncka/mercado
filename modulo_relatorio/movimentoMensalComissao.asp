@@ -305,6 +305,7 @@ response.write strSQL
         acumdblVlrComissaoMercado = dblVlrComissaoMercado+acumdblVlrComissaoMercado
  %>
  <tr align='left'> 
+ 
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=left(objRS("data")&"",10)%></td>
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("contrato")&""%></td>    
     <td  bgcolor="<%=bgColor%>" class="arial12"><%=objRS("comprador")&""%></td>
