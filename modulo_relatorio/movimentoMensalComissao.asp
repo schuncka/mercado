@@ -296,7 +296,7 @@ response.write strSQL
         else
             bgColor = "#DCDCDC"
         end if
-
+        response.write(objRS("quantidade") * objRS("preco"))
         dblVlrComissaoParticipacao = calcComissaoRepre (objRS("repre"), vlrComissaoV, objRS("preco"), objRS("quantidade"), vlrComissao, vlrComissaoC)
                                       'calcComissaoRepre(IDREPRE       , ComissaoV    , PRECO        , Quantidade         , COMISSAO   , ComissaoC )
         dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), objRS("preco"), objRS("quantidade"), vlrComissaoV, vlrComissaoC, vlrComissao)
