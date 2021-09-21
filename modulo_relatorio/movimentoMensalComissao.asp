@@ -330,7 +330,7 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
         acumdblVlrComissaoParticipacao = dblVlrComissaoParticipacao+acumdblVlrComissaoParticipacao
         acumdblVlrComissaoMercado      = dblVlrComissaoMercado+acumdblVlrComissaoMercado
-        acumDblVlrOperacao             = rvlrTotal+acumDblVlrOperacao
+        acumDblVlrOperacao             = vlrTotal+acumDblVlrOperacao
  %>
  <tr align='left'> 
 
