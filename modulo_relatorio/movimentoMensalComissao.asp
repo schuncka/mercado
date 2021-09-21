@@ -29,6 +29,10 @@
  Dim acumdblVlrComissaoParticipacao 
  Dim acumdblVlrComissaoMercado     
  Dim acumDblVlrOperacao 
+ Dim preco      
+ Dim quantidade 
+ Dim vlrTotal   
+
  acumdblVlrComissaoParticipacao = 0  
  acumdblVlrComissaoMercado     = 0
  acumDblVlrOperacao = 0
@@ -302,13 +306,31 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
             bgColor = "#DCDCDC"
         end if
         
-        dblVlrComissaoParticipacao = calcComissaoRepre (objRS("repre"), vlrComissaoV, replace(objRS("preco"),".",","), replace(objRS("quantidade"),".",","), vlrComissao, vlrComissaoC)
+        
+        preco      = 0
+        quantidade = 0
+        vlrTotal   = 0
+
+        if objRS("preco") <> "" then
+          preco = replace(objRS("preco"),".",",")
+        end if
+        
+        if objRS("quantidade") <> "" then
+          quantidade = replace(objRS("quantidade"),".",",")
+        end if
+        
+        if objRS("vlrTotal") <> "" then
+          vlrTotal = replace(objRS("vlrTotal"),".",",")
+        end if
+
+
+        dblVlrComissaoParticipacao = calcComissaoRepre (objRS("repre"), vlrComissaoV, preco, quantidade, vlrComissao, vlrComissaoC)
                                       'calcComissaoRepre(IDREPRE       , ComissaoV    , PRECO        , Quantidade         , COMISSAO   , ComissaoC )
-        dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), replace(objRS("preco"),".",","), replace(objRS("quantidade"),".",","), vlrComissaoV, vlrComissaoC, vlrComissao)
+        dblVlrComissaoMercado = calcComissaoMercado (objRS("repre"), preco, quantidade, vlrComissaoV, vlrComissaoC, vlrComissao)
                                 'calcComissaoMercado (IDREPRE       , PRECO         , Quantidade         , ComissaoV   , ComissaoC   , COMISSAO )
         acumdblVlrComissaoParticipacao = dblVlrComissaoParticipacao+acumdblVlrComissaoParticipacao
         acumdblVlrComissaoMercado      = dblVlrComissaoMercado+acumdblVlrComissaoMercado
-        acumDblVlrOperacao             = replace(objRS("vlrTotal"),".",",")+acumDblVlrOperacao
+        acumDblVlrOperacao             = rvlrTotal+acumDblVlrOperacao
  %>
  <tr align='left'> 
 
@@ -318,9 +340,9 @@ strSQL = strSQL & " ORDER BY TBL_CONTRATO.IDCONTRATO /*limit 30*/; "
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("vendedor")&""%></td>        
 	  <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("repre")&""%></td>
     <td  align="left" bgcolor="<%=bgColor%>" class="arial12"><%=objRS("produto")&""%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("quantidade"),".",","),2)%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("preco"),".",","),2)%></td>
-    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(replace(objRS("vlrTotal"),".",","),2)%></b>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(quantidade,2)%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(preco,2)%></td>
+    <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><%=FormatNumber(vlrTotal,2)%></b>
     </td>
     <td  align="right" bgcolor="<%=bgColor%>" class="arial12"><b>		
     	<%=FormatNumber((vlrComissaoV*100),2)%> / <%=FormatNumber((vlrComissaoC*100),2)%></b>      
