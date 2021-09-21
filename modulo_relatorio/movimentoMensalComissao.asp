@@ -255,12 +255,13 @@ strSQL = strSQL & " , TBL_PRODUTOS.Produto "
 strSQL = strSQL & " , (select NomeDoCliente from tbl_clientes where codigodocliente = tbl_contrato.vendedor) as VENDEDOR, "
 strSQL = strSQL & " , (select NomeDoCliente from tbl_clientes where codigodocliente = tbl_contrato.comprador) as COMPRADOR, "
 strSQL = strSQL & " , (select NomeDoCliente from tbl_clientes where codigodocliente = tbl_contrato.idrepre) as REPRE, "
-strSQL = strSQL & " FROM (((TBL_CONTRATO  "
+strSQL = strSQL & " FROM TBL_CONTRATO  "
 'strSQL = strSQL & "   LEFT JOIN TBL_CLIENTES AS tComprador ON (TBL_CONTRATO.Comprador = tComprador.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tComprador.IDEMPRESA))  "
 'strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tVendedor ON (TBL_CONTRATO.IDEMPRESA = tVendedor.IDEMPRESA) AND (TBL_CONTRATO.Vendedor = tVendedor.CodigoDoCliente))  "
 'strSQL = strSQL & " 	LEFT JOIN TBL_CLIENTES AS tRepre ON (TBL_CONTRATO.IDREPRE = tRepre.CodigoDoCliente) AND (TBL_CONTRATO.IDEMPRESA = tRepre.IDEMPRESA))  "
-strSQL = strSQL & " 	LEFT JOIN TBL_PRODUTOS ON (TBL_CONTRATO.IDEMPRESA = TBL_PRODUTOS.IDEMPRESA) AND (TBL_CONTRATO.Produto = TBL_PRODUTOS.IDPROD) "
+strSQL = strSQL & " 	LEFT JOIN TBL_PRODUTOS ON TBL_CONTRATO.IDEMPRESA = TBL_PRODUTOS.IDEMPRESA AND TBL_CONTRATO.Produto = TBL_PRODUTOS.IDPROD "
 strSQL = strSQL & " WHERE (((TBL_CONTRATO.Data) Between '" & PrepDataIve(strDT_INICIO, False, false) & " 00:00:00 ' And '" & PrepDataIve(strDT_FIM, False, false) & " 00:00:00') /*AND ((tRepre.NomeDoCliente) Is Not Null)*/ )"
+strSQL = strSQL & " AND TBL_CONTRATO.preco>0 "
 if strIdRepre <> "" then
   strSQL = strSQL & " and tbl_contrato.idrepre = " & strIdRepre
 end if
