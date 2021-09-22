@@ -316,15 +316,15 @@ response.write strSQL
         vlrTotal   = 0
 
         if objRS("preco") <> "" then
-          preco = replace(objRS("preco"),".",",")
+          preco = replace(replace(objRS("preco"),".",""),".",",")
         end if
         
         if objRS("quantidade") <> "" then
-          quantidade = replace(objRS("quantidade"),".",",")
+          quantidade = replace(replace(objRS("quantidade"),".",""),".",",")
         end if
         
         if objRS("vlrTotal") <> "" then
-          vlrTotal = replace(objRS("vlrTotal"),".",",")
+          vlrTotal = replace(replace(objRS("vlrTotal"),".",""),".",",")
         end if
 
 
